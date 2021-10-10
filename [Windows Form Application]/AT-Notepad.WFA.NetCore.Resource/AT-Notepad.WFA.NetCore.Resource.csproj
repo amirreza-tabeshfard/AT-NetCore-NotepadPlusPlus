@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>AT_Notepad.WFA.NetCore.Resource</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+    <PackageReference Include="System.Resources.Extensions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Images\ICO.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ICO.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\JPG.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>JPG.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\PNG.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PNG.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Images\ICO.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ICO.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\JPG.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JPG.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\PNG.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PNG.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
