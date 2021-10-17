@@ -6,9 +6,10 @@ English | [فارسی](./README.fa-IR.md)
 	<h1 align="center">
   Notepads
 </h1>
+<div>
 	<p align="center">
-  Design of a modern text editor with WFA and WPF platforms
-</p>
+	  Design of a modern text editor with WFA and WPF platforms
+	</p>
 	<p align="center">
 		<a style="text-decoration:none" href="https://www.microsoft.com/store/apps/9nhl4nsc67wm">
 			<img src="https://img.shields.io/badge/Microsoft%20Store-Download-orange.svg?style=flat-square" alt="Store link"/>
@@ -20,7 +21,26 @@ English | [فارسی](./README.fa-IR.md)
 			<img src="https://img.shields.io/discord/588473626651787274.svg?style=flat-square" alt="Discord"/>
 		</a>
 	</p>
-</p>
+</div>
+<div>
+	<p align="center">
+		<strong>
+			Author
+		</strong>
+		: Amirreza Tabeshfard
+		(
+			<span>
+				<img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" style="width: 20px; height: 20px; margin: 0px;">
+			</span>
+			<span>
+				<a href="https://www.instagram.com/WebNestDotNet/" target="_blank">
+					WebNestDotNet
+				</a>
+			</span>
+		)
+	</p>
+</div>
+
 
 ## What is the use of a notebook?
 <div>
