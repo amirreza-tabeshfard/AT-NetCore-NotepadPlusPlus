@@ -14,7 +14,7 @@ using System.Windows.Forms;
 using AT_Notepad.WFA.NetCore.Common.Extensions;
 using AT_Notepad.WFA.NetCore.UI.Infrastructure;
 
-namespace AT_Notepad.WFA.NetCore.UI
+namespace AT_Notepad.WFA.NetCore.UI.First_Case
 {
     public partial class FrmMain : Form
     {

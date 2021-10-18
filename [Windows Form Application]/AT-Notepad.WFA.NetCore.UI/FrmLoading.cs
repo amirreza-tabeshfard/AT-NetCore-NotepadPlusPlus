@@ -14,7 +14,7 @@ namespace AT_Notepad.WFA.NetCore.UI
     {
         #region Field(s)
 
-        private FrmMain frmMain;
+        private First_Case.FrmMain frmMainFist;
 
         #endregion
 
@@ -23,7 +23,7 @@ namespace AT_Notepad.WFA.NetCore.UI
         public FrmLoading()
         {
             InitializeComponent();
-            frmMain = new FrmMain();
+            frmMainFist = new First_Case.FrmMain();
         }
 
         #endregion
@@ -38,7 +38,7 @@ namespace AT_Notepad.WFA.NetCore.UI
             {
                 timer.Enabled = false;
                 this.Hide();
-                frmMain.Show();
+                frmMainFist.Show();
             }
         } 
 

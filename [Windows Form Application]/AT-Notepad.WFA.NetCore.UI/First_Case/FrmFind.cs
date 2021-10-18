@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AT_Notepad.WFA.NetCore.UI
+namespace AT_Notepad.WFA.NetCore.UI.First_Case
 {
     public partial class FrmFind : Form
     {

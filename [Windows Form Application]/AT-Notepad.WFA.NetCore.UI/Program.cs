@@ -1,16 +1,17 @@
+/*
+    Made by the author:                 Amirreza Tabeshfard
+    Created on this date:               Sunday - 2021 10 October
+
+    Last updated by the author:         Amirreza Tabeshfard
+    Last updated on this date:          Monday - 2021 18 October
+*/
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AT_Notepad.WFA.NetCore.UI
 {
     static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {

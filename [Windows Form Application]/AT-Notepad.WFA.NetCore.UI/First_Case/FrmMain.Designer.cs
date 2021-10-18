@@ -1,5 +1,5 @@
 ﻿
-namespace AT_Notepad.WFA.NetCore.UI
+namespace AT_Notepad.WFA.NetCore.UI.First_Case
 {
     partial class FrmMain
     {
