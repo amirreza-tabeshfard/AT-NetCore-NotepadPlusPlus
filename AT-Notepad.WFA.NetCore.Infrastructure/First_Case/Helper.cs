@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AT_Notepad.WFA.NetCore.UI.Infrastructure
+namespace AT_Notepad.WFA.NetCore.Infrastructure.First_Case
 {
     public static class Helper
     {

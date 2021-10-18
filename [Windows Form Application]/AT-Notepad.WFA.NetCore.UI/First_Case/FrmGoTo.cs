@@ -56,7 +56,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             txtLineNumber.SelectAll();
         }
 
-        private void txtLineNumber_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtLineNumber_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar))
             {
@@ -66,12 +66,12 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void BtnCancel_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void btnGoTo_Click(object sender, EventArgs e)
+        private void BtnGoTo_Click(object sender, EventArgs e)
         {
             if (txtLineNumber.Text.IsEmpty())
             {

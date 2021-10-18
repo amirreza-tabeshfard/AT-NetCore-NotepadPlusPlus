@@ -6,7 +6,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 {
     partial class FrmAbout : Form
     {
-        Random random;
+        readonly Random random;
 
         [Obsolete]
         public FrmAbout()
@@ -41,7 +41,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             }
         }
 
-        public string AssemblyVersion
+        public static string AssemblyVersion
         {
             get
             {
@@ -49,7 +49,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             }
         }
 
-        public string AssemblyDescription
+        public static string AssemblyDescription
         {
             get
             {
@@ -62,7 +62,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             }
         }
 
-        public string AssemblyProduct
+        public static string AssemblyProduct
         {
             get
             {
@@ -75,7 +75,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             }
         }
 
-        public string AssemblyCopyright
+        public static string AssemblyCopyright
         {
             get
             {
@@ -88,7 +88,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             }
         }
 
-        public string AssemblyCompany
+        public static string AssemblyCompany
         {
             get
             {

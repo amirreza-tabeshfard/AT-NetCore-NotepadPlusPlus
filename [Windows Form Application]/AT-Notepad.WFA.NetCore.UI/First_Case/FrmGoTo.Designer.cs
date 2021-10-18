@@ -52,7 +52,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.txtLineNumber.Name = "txtLineNumber";
             this.txtLineNumber.Size = new System.Drawing.Size(220, 22);
             this.txtLineNumber.TabIndex = 1;
-            this.txtLineNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLineNumber_KeyPress);
+            this.txtLineNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLineNumber_KeyPress);
             // 
             // btnCancel
             // 
@@ -62,7 +62,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // btnGoTo
             // 
@@ -72,7 +72,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.btnGoTo.TabIndex = 3;
             this.btnGoTo.Text = "Go To";
             this.btnGoTo.UseVisualStyleBackColor = true;
-            this.btnGoTo.Click += new System.EventHandler(this.btnGoTo_Click);
+            this.btnGoTo.Click += new System.EventHandler(this.BtnGoTo_Click);
             // 
             // FrmGoTo
             // 

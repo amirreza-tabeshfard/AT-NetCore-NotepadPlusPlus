@@ -48,7 +48,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.btnFindNext.TabIndex = 5;
             this.btnFindNext.Text = "&Find next";
             this.btnFindNext.UseVisualStyleBackColor = true;
-            this.btnFindNext.Click += new System.EventHandler(this.btnFindNext_Click);
+            this.btnFindNext.Click += new System.EventHandler(this.BtnFindNext_Click);
             // 
             // txtFindWhat
             // 
@@ -56,8 +56,8 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.txtFindWhat.Name = "txtFindWhat";
             this.txtFindWhat.Size = new System.Drawing.Size(211, 22);
             this.txtFindWhat.TabIndex = 4;
-            this.txtFindWhat.TextChanged += new System.EventHandler(this.txtFindWhat_TextChanged);
-            this.txtFindWhat.Enter += new System.EventHandler(this.txtFindWhat_Enter);
+            this.txtFindWhat.TextChanged += new System.EventHandler(this.TxtFindWhat_TextChanged);
+            this.txtFindWhat.Enter += new System.EventHandler(this.TxtFindWhat_Enter);
             // 
             // lblFindWhat
             // 
@@ -74,7 +74,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.txtReplaceWith.Name = "txtReplaceWith";
             this.txtReplaceWith.Size = new System.Drawing.Size(211, 22);
             this.txtReplaceWith.TabIndex = 7;
-            this.txtReplaceWith.Enter += new System.EventHandler(this.txtReplaceWith_Enter);
+            this.txtReplaceWith.Enter += new System.EventHandler(this.TxtReplaceWith_Enter);
             // 
             // lblReplaceWith
             // 
@@ -93,7 +93,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.btnReplace.TabIndex = 8;
             this.btnReplace.Text = "&Replace";
             this.btnReplace.UseVisualStyleBackColor = true;
-            this.btnReplace.Click += new System.EventHandler(this.btnReplace_Click);
+            this.btnReplace.Click += new System.EventHandler(this.BtnReplace_Click);
             // 
             // btnReplaceAll
             // 
@@ -103,7 +103,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.btnReplaceAll.TabIndex = 9;
             this.btnReplaceAll.Text = "Replace &All";
             this.btnReplaceAll.UseVisualStyleBackColor = true;
-            this.btnReplaceAll.Click += new System.EventHandler(this.btnReplaceAll_Click);
+            this.btnReplaceAll.Click += new System.EventHandler(this.BtnReplaceAll_Click);
             // 
             // btnCancel
             // 
@@ -113,7 +113,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // checkBoxMachCase
             // 

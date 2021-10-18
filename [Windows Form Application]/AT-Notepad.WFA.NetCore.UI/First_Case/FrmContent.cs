@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using AT_Notepad.WFA.NetCore.Common.Extensions;
-using AT_Notepad.WFA.NetCore.UI.Infrastructure;
+using AT_Notepad.WFA.NetCore.Infrastructure.First_Case;
 
 namespace AT_Notepad.WFA.NetCore.UI.First_Case
 {
@@ -134,28 +134,28 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         #region Event(s) ==> textBox
 
-        private void textBox_TextChanged(object sender, EventArgs e)
+        private void TextBox_TextChanged(object sender, EventArgs e)
         {
             SaveCondition = true;
             UpdateStatusBar();
         }
 
-        private void textBox_KeyDown(object sender, KeyEventArgs e)
+        private void TextBox_KeyDown(object sender, KeyEventArgs e)
         {
             UpdateStatusBar();
         }
 
-        private void textBox_KeyUp(object sender, KeyEventArgs e)
+        private void TextBox_KeyUp(object sender, KeyEventArgs e)
         {
             UpdateStatusBar();
         }
 
-        private void textBox_MouseDown(object sender, MouseEventArgs e)
+        private void TextBox_MouseDown(object sender, MouseEventArgs e)
         {
             UpdateStatusBar();
         }
 
-        private void textBox_MouseUp(object sender, MouseEventArgs e)
+        private void TextBox_MouseUp(object sender, MouseEventArgs e)
         {
             UpdateStatusBar();
         }

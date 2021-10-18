@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using AT_Notepad.WFA.NetCore.Common.Extensions;
-using AT_Notepad.WFA.NetCore.UI.Infrastructure;
+using AT_Notepad.WFA.NetCore.Infrastructure.First_Case;
 
 namespace AT_Notepad.WFA.NetCore.UI.First_Case
 {
@@ -34,7 +34,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
         private FontDialog _fontDialog;
         private ColorDialog _colorDialog;
 
-        private FrmAbout _frmAbout;
+        private readonly FrmAbout _frmAbout;
         private FrmContent _frmContent;
         private FrmFind _frmFind;
         private FrmReplace _frmReplace;
@@ -44,6 +44,8 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         #region Constructor
 
+        [Obsolete]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1041:Provide ObsoleteAttribute message", Justification = "<Pending>")]
         public FrmMain()
         {
             InitializeComponent();
@@ -52,9 +54,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             InitializeSetSaveFileDialog();
             InitializeSetFontDialog();
             InitializeSetColorDialog();
-#pragma warning disable CS0612 // Type or member is obsolete
             _frmAbout = new FrmAbout();
-#pragma warning restore CS0612 // Type or member is obsolete
         }
 
         #endregion
@@ -123,7 +123,9 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
         {
             get
             {
-                if (Filename == null && Content.IsEmpty()) return false;
+                if (Filename == null && Content.IsEmpty()) 
+                    return false;
+
                 return _isDirty;
             }
             set
@@ -242,62 +244,70 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         private void InitializeSetOpenFileDialog()
         {
-            _openFileDialog = new OpenFileDialog();
-            _openFileDialog.Filter = "Text Documents ( *.txt) |*.txt; |All Files ( *.*) |*.*;";
-            _openFileDialog.FileName = "openFileDialog";
-            _openFileDialog.AddExtension = true;
-            _openFileDialog.AutoUpgradeEnabled = true;
-            _openFileDialog.CheckFileExists = true;
-            _openFileDialog.CheckPathExists = true;
-            _openFileDialog.Multiselect = false;
-            _openFileDialog.ReadOnlyChecked = false;
-            _openFileDialog.RestoreDirectory = false;
-            _openFileDialog.ShowHelp = false;
-            _openFileDialog.ShowReadOnly = false;
-            _openFileDialog.SupportMultiDottedExtensions = false;
-            _openFileDialog.ValidateNames = true;
+            _openFileDialog = new OpenFileDialog
+            {
+                Filter = "Text Documents ( *.txt) |*.txt; |All Files ( *.*) |*.*;",
+                FileName = "openFileDialog",
+                AddExtension = true,
+                AutoUpgradeEnabled = true,
+                CheckFileExists = true,
+                CheckPathExists = true,
+                Multiselect = false,
+                ReadOnlyChecked = false,
+                RestoreDirectory = false,
+                ShowHelp = false,
+                ShowReadOnly = false,
+                SupportMultiDottedExtensions = false,
+                ValidateNames = true
+            };
         }
 
         private void InitializeSetSaveFileDialog()
         {
-            _saveFileDialog = new SaveFileDialog();
-            _saveFileDialog.Filter = "Text Documents ( *.txt) |*.txt; |All Files ( *.*) |*.*;";
-            _saveFileDialog.FileName = "openFileDialog";
-            _saveFileDialog.AddExtension = true;
-            _saveFileDialog.AutoUpgradeEnabled = true;
-            _saveFileDialog.CheckFileExists = false;
-            _saveFileDialog.CheckPathExists = true;
-            _saveFileDialog.CreatePrompt = false;
-            _saveFileDialog.DereferenceLinks = true;
-            _saveFileDialog.OverwritePrompt = true;
-            _saveFileDialog.RestoreDirectory = false;
-            _saveFileDialog.ShowHelp = false;
-            _saveFileDialog.SupportMultiDottedExtensions = false;
-            _saveFileDialog.ValidateNames = true;
+            _saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Text Documents ( *.txt) |*.txt; |All Files ( *.*) |*.*;",
+                FileName = "openFileDialog",
+                AddExtension = true,
+                AutoUpgradeEnabled = true,
+                CheckFileExists = false,
+                CheckPathExists = true,
+                CreatePrompt = false,
+                DereferenceLinks = true,
+                OverwritePrompt = true,
+                RestoreDirectory = false,
+                ShowHelp = false,
+                SupportMultiDottedExtensions = false,
+                ValidateNames = true
+            };
         }
 
         private void InitializeSetFontDialog()
         {
-            _fontDialog = new FontDialog();
-            _fontDialog.AllowScriptChange = true;
-            _fontDialog.AllowSimulations = true;
-            _fontDialog.AllowVectorFonts = true;
-            _fontDialog.AllowVerticalFonts = true;
-            _fontDialog.ScriptsOnly = false;
-            _fontDialog.ShowApply = false;
-            _fontDialog.ShowColor = false;
-            _fontDialog.ShowEffects = false;
-            _fontDialog.ShowHelp = false;
+            _fontDialog = new FontDialog
+            {
+                AllowScriptChange = true,
+                AllowSimulations = true,
+                AllowVectorFonts = true,
+                AllowVerticalFonts = true,
+                ScriptsOnly = false,
+                ShowApply = false,
+                ShowColor = false,
+                ShowEffects = false,
+                ShowHelp = false
+            };
         }
 
         private void InitializeSetColorDialog()
         {
-            _colorDialog = new ColorDialog();
-            _colorDialog.AllowFullOpen = true;
-            _colorDialog.AnyColor = true;
-            _colorDialog.FullOpen = true;
-            _colorDialog.ShowHelp = true;
-            _colorDialog.SolidColorOnly = true;
+            _colorDialog = new ColorDialog
+            {
+                AllowFullOpen = true,
+                AnyColor = true,
+                FullOpen = true,
+                ShowHelp = true,
+                SolidColorOnly = true
+            };
         }
 
         private void Find()
@@ -420,15 +430,15 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
         [Obsolete]
         private void MnuFileNew_Click(object sender, EventArgs e)
         {
-            _frmContent = new FrmContent();
+            _frmContent = new();
             _frmContent.MdiParent = this;
             _frmContent.Text = "Note Pad - " + MdiChildren.Length.ToString();
             _frmContent.Show();
 
             if (File.Exists("FormatConfiguration_Font.bin"))
             {
-                FileStream ConfigFile = new FileStream("FormatConfiguration_Font.bin", FileMode.Open);
-                BinaryFormatter Deserializer = new BinaryFormatter();
+                FileStream ConfigFile = new("FormatConfiguration_Font.bin", FileMode.Open);
+                BinaryFormatter Deserializer = new();
                 FormatConfiguration Current = Deserializer.Deserialize(ConfigFile) as FormatConfiguration;
                 ConfigFile.Close();
                 ((FrmContent)ActiveMdiChild).textBox.Font = Current.CurrentFont;
@@ -436,8 +446,8 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
             if (File.Exists("FormatConfiguration_BackColor.bin"))
             {
-                FileStream ConfigFile = new FileStream("FormatConfiguration_BackColor.bin", FileMode.Open);
-                BinaryFormatter Deserializer = new BinaryFormatter();
+                FileStream ConfigFile = new("FormatConfiguration_BackColor.bin", FileMode.Open);
+                BinaryFormatter Deserializer = new();
                 FormatConfiguration Current = Deserializer.Deserialize(ConfigFile) as FormatConfiguration;
                 ConfigFile.Close();
                 ((FrmContent)ActiveMdiChild).textBox.BackColor = Current.CurrentColor;
@@ -445,8 +455,8 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
             if (File.Exists("FormatConfiguration_ForeColor.bin"))
             {
-                FileStream ConfigFile = new FileStream("FormatConfiguration_ForeColor.bin", FileMode.Open);
-                BinaryFormatter Deserializer = new BinaryFormatter();
+                FileStream ConfigFile = new("FormatConfiguration_ForeColor.bin", FileMode.Open);
+                BinaryFormatter Deserializer = new();
                 FormatConfiguration Current = Deserializer.Deserialize(ConfigFile) as FormatConfiguration;
                 ConfigFile.Close();
                 ((FrmContent)ActiveMdiChild).textBox.ForeColor = Current.CurrentColor;
@@ -683,9 +693,11 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         private void MnuEditGoTo_Click(object sender, EventArgs e)
         {
-            _frmGoTo = new FrmGoTo(LineIndex + 1);
-            _frmGoTo.Left = Left + 5;
-            _frmGoTo.Top = Top + 44;
+            _frmGoTo = new FrmGoTo(LineIndex + 1)
+            {
+                Left = Left + 5,
+                Top = Top + 44
+            };
 
             if (_frmGoTo.ShowDialog(this) != DialogResult.OK) return;
 
@@ -737,8 +749,8 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
                 if (_fontDialog.ShowDialog() == DialogResult.OK)
                 {
                     ((FrmContent)ActiveMdiChild).textBox.Font = _fontDialog.Font;
-                    FileStream ConfigFile = new FileStream("FormatConfiguration_Font.bin", FileMode.Create);
-                    BinaryFormatter Serializer = new BinaryFormatter();
+                    FileStream ConfigFile = new("FormatConfiguration_Font.bin", FileMode.Create);
+                    BinaryFormatter Serializer = new();
                     Serializer.Serialize(ConfigFile, new FormatConfiguration(_fontDialog.Font));
                     ConfigFile.Close();
                 }
@@ -757,8 +769,8 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
                 if (_colorDialog.ShowDialog() == DialogResult.OK)
                 {
                     ((FrmContent)ActiveMdiChild).textBox.BackColor = _colorDialog.Color;
-                    FileStream ConfigFile = new FileStream("FormatConfiguration_BackColor.bin", FileMode.Create);
-                    BinaryFormatter Serializer = new BinaryFormatter();
+                    FileStream ConfigFile = new("FormatConfiguration_BackColor.bin", FileMode.Create);
+                    BinaryFormatter Serializer = new();
                     Serializer.Serialize(ConfigFile, new FormatConfiguration(_colorDialog.Color));
                     ConfigFile.Close();
                 }
@@ -777,8 +789,8 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
                 if (_colorDialog.ShowDialog() == DialogResult.OK)
                 {
                     ((FrmContent)ActiveMdiChild).textBox.ForeColor = _colorDialog.Color;
-                    FileStream ConfigFile = new FileStream("FormatConfiguration_ForeColor.bin", FileMode.Create);
-                    BinaryFormatter Serializer = new BinaryFormatter();
+                    FileStream ConfigFile = new("FormatConfiguration_ForeColor.bin", FileMode.Create);
+                    BinaryFormatter Serializer = new();
                     Serializer.Serialize(ConfigFile, new FormatConfiguration(_colorDialog.Color));
                     ConfigFile.Close();
                 }
@@ -875,6 +887,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         #region Event(s) ==> ToolStrip1
 
+        [Obsolete]
         private void ToolStrip1New_Click(object sender, EventArgs e)
         {
             MnuFileNew_Click(sender, e);

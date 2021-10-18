@@ -1,6 +1,4 @@
-﻿using AT_Notepad.WFA.NetCore.Common.Extensions;
-using AT_Notepad.WFA.NetCore.UI.Infrastructure;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,13 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using AT_Notepad.WFA.NetCore.Common.Extensions;
+using AT_Notepad.WFA.NetCore.Infrastructure.First_Case;
+
 namespace AT_Notepad.WFA.NetCore.UI.First_Case
 {
     public partial class FrmReplace : Form
     {
         #region Field(s)
 
-        private FrmMain _frmMain;
+        private readonly FrmMain _frmMain;
 
         #endregion
 
@@ -72,7 +73,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         #region Event(s) ==> btnFindNext
 
-        private void btnFindNext_Click(object sender, EventArgs e)
+        private void BtnFindNext_Click(object sender, EventArgs e)
         {
             string SearchText = txtFindWhat.Text;
             bool isMatchCase = checkBoxMachCase.Checked;
@@ -82,7 +83,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             {
                 MessageBox.Show(this, CONST.CannotFindMessage.FormatUsingObject(new
                 {
-                    SearchText = SearchText
+                    SearchText
                 }), "Notepad");
             }
         }
@@ -91,12 +92,12 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         #region Event(s) ==> btnReplace
 
-        private void btnReplace_Click(object sender, EventArgs e)
+        private void BtnReplace_Click(object sender, EventArgs e)
         {
             string SearchText = txtFindWhat.Text;
             string ReplaceWithText = txtReplaceWith.Text;
             bool MatchCase = checkBoxMachCase.Checked;
-            var eStringComparison = MatchCase ? StringComparison.CurrentCulture : StringComparison.CurrentCultureIgnoreCase;
+            _ = MatchCase ? StringComparison.CurrentCulture : StringComparison.CurrentCultureIgnoreCase;
             var bSearchDown = true;
 
             if (_frmMain.SelectedText.Equals(SearchText))
@@ -108,7 +109,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             {
                 MessageBox.Show(this, CONST.CannotFindMessage.FormatUsingObject(new
                 {
-                    SearchText = SearchText
+                    SearchText
                 }), "Notepad");
             }
         }
@@ -117,7 +118,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         #region Event(s) ==> btnReplaceAll
 
-        private void btnReplaceAll_Click(object sender, EventArgs e)
+        private void BtnReplaceAll_Click(object sender, EventArgs e)
         {
             string Content = _frmMain.Content;
             string SearchText = txtFindWhat.Text;
@@ -129,12 +130,12 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             {
                 MessageBox.Show(this, CONST.CannotFindMessage.FormatUsingObject(new
                 {
-                    SearchText = SearchText
+                    SearchText
                 }), "Notepad");
                 return;
             }
 
-            StringBuilder Builder = new StringBuilder();
+            StringBuilder Builder = new();
             string ReplaceWith = txtReplaceWith.Text;
 
             {
@@ -190,7 +191,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         #region Event(s) ==> btnCancel
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void BtnCancel_Click(object sender, EventArgs e)
         {
             Hide();
         }
@@ -199,13 +200,13 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         #region Event(s) ==> txtFindWhat
 
-        private void txtFindWhat_Enter(object sender, EventArgs e)
+        private void TxtFindWhat_Enter(object sender, EventArgs e)
         {
             TextBox Sender = (TextBox)sender;
             Sender.SelectAll();
         }
 
-        private void txtFindWhat_TextChanged(object sender, EventArgs e)
+        private void TxtFindWhat_TextChanged(object sender, EventArgs e)
         {
             UpdateButtons();
         }
@@ -214,7 +215,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         #region Event(s) ==> txtReplaceWith
 
-        private void txtReplaceWith_Enter(object sender, EventArgs e)
+        private void TxtReplaceWith_Enter(object sender, EventArgs e)
         {
             TextBox Sender = (TextBox)sender;
             Sender.SelectAll();

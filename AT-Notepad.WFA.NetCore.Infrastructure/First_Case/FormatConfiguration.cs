@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Drawing;
 
-namespace AT_Notepad.WFA.NetCore.UI.Infrastructure
+namespace AT_Notepad.WFA.NetCore.Infrastructure.First_Case
 {
     [Serializable]
-    internal class FormatConfiguration
+    public class FormatConfiguration
     {
         #region Constructor
 

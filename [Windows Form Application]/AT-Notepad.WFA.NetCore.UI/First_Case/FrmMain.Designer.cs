@@ -27,6 +27,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        [System.Obsolete]
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -837,12 +838,6 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
         private System.Windows.Forms.ToolStripStatusLabel lblTimeStatus;
         private System.Windows.Forms.ContextMenuStrip ContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ContextMenuStrip1New;
-        private System.Windows.Forms.ToolStripMenuItem MenuStrip1Open;
-        private System.Windows.Forms.ToolStripMenuItem MenuStrip1Save;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem MenuStrip1Cut;
-        private System.Windows.Forms.ToolStripMenuItem MenuStrip1Copy;
-        private System.Windows.Forms.ToolStripMenuItem MenuStrip1Paste;
         private System.Windows.Forms.ToolStripMenuItem ContextMenuStrip1Open;
         private System.Windows.Forms.ToolStripMenuItem ContextMenuStrip1Save;
         private System.Windows.Forms.ToolStripSeparator ContextMenuStrip1Separator2;

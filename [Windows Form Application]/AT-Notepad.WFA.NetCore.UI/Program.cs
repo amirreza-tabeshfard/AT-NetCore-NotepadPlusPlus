@@ -13,6 +13,7 @@ namespace AT_Notepad.WFA.NetCore.UI
     static class Program
     {
         [STAThread]
+        [Obsolete]
         static void Main()
         {
             Application.SetHighDpiMode(HighDpiMode.SystemAware);

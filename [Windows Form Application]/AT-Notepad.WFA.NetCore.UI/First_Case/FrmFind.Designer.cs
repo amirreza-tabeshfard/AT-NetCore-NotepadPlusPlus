@@ -55,8 +55,8 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.txtFindWhat.Name = "txtFindWhat";
             this.txtFindWhat.Size = new System.Drawing.Size(213, 22);
             this.txtFindWhat.TabIndex = 1;
-            this.txtFindWhat.TextChanged += new System.EventHandler(this.txtFindWhat_TextChanged);
-            this.txtFindWhat.Enter += new System.EventHandler(this.txtFindWhat_Enter);
+            this.txtFindWhat.TextChanged += new System.EventHandler(this.TxtFindWhat_TextChanged);
+            this.txtFindWhat.Enter += new System.EventHandler(this.TxtFindWhat_Enter);
             // 
             // btnFindNext
             // 
@@ -66,7 +66,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.btnFindNext.TabIndex = 2;
             this.btnFindNext.Text = "&Find next";
             this.btnFindNext.UseVisualStyleBackColor = true;
-            this.btnFindNext.Click += new System.EventHandler(this.btnFindNext_Click);
+            this.btnFindNext.Click += new System.EventHandler(this.BtnFindNext_Click);
             // 
             // btnCancel
             // 
@@ -76,7 +76,7 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // groupDirection
             // 

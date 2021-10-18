@@ -14,12 +14,13 @@ namespace AT_Notepad.WFA.NetCore.UI
     {
         #region Field(s)
 
-        private First_Case.FrmMain frmMainFist;
+        private readonly First_Case.FrmMain frmMainFist;
 
         #endregion
 
         #region Constructor
 
+        [Obsolete]
         public FrmLoading()
         {
             InitializeComponent();
@@ -30,7 +31,7 @@ namespace AT_Notepad.WFA.NetCore.UI
 
         #region Events Components
         
-        private void timer_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
             this.Text = $"Loadinng: {progressBar.Value++}%";
 
