@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AT_Notepad.WFA.NetCore.UI
@@ -14,17 +7,18 @@ namespace AT_Notepad.WFA.NetCore.UI
     {
         #region Field(s)
 
-        private readonly First_Case.FrmMain frmMainFist;
+        private readonly FrmCase _frmCase;
 
         #endregion
 
         #region Constructor
 
         [Obsolete]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1041:Provide ObsoleteAttribute message", Justification = "<Pending>")]
         public FrmLoading()
         {
             InitializeComponent();
-            frmMainFist = new First_Case.FrmMain();
+            _frmCase = new FrmCase();
         }
 
         #endregion
@@ -39,7 +33,7 @@ namespace AT_Notepad.WFA.NetCore.UI
             {
                 timer.Enabled = false;
                 this.Hide();
-                frmMainFist.Show();
+                _frmCase.Show();
             }
         } 
 

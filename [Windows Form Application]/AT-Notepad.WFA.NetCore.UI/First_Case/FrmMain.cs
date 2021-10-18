@@ -346,6 +346,11 @@ namespace AT_Notepad.WFA.NetCore.UI.First_Case
 
         private void OnFilenameChanged(string oldvalue, string value)
         {
+            if (oldvalue is null)
+            {
+                throw new ArgumentNullException(nameof(oldvalue));
+            }
+
             OnDocumentNameChanged();
         }
 
