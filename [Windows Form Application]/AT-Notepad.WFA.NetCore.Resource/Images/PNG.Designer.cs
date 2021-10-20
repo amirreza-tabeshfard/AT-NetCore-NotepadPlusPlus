@@ -129,5 +129,15 @@ namespace AT_Notepad.WFA.NetCore.Resource.Images {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap NotePad {
+            get {
+                object obj = ResourceManager.GetObject("NotePad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -18,6 +18,7 @@
     <ProjectReference Include="..\AT-Notepad.WFA.NetCore.Common\AT-Notepad.WFA.NetCore.Common.csproj" />
     <ProjectReference Include="..\AT-Notepad.WFA.NetCore.Infrastructure\AT-Notepad.WFA.NetCore.Infrastructure.csproj" />
     <ProjectReference Include="..\AT-Notepad.WFA.NetCore.Resource\AT-Notepad.WFA.NetCore.Resource.csproj" />
+    <ProjectReference Include="..\AT-Notepad.WFA.NetCore.UC\AT-Notepad.WFA.NetCore.UC.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 
-using AT_Notepad.WFA.NetCore.UI.First_Style;
+using FirstStyle = AT_Notepad.WFA.NetCore.UI.First_Style;
+using SecondStyle = AT_Notepad.WFA.NetCore.UI.Second_Style;
 
 namespace AT_Notepad.WFA.NetCore.UI
 {
@@ -9,7 +10,8 @@ namespace AT_Notepad.WFA.NetCore.UI
     {
         #region Field(s)
 
-        private readonly FrmMain _frmMain;
+        private readonly FirstStyle.FrmMain _firstStyleFrmMain;
+        private readonly Second_Style.FrmMain _secondStyleFrmMain;
 
         #endregion
 
@@ -18,7 +20,8 @@ namespace AT_Notepad.WFA.NetCore.UI
         public FrmStyle()
         {
             InitializeComponent();
-            _frmMain = new FrmMain();
+            _firstStyleFrmMain = new FirstStyle.FrmMain();
+            _secondStyleFrmMain = new SecondStyle.FrmMain();
         }
 
         private void Buttons_Click(object sender, EventArgs e)
@@ -29,13 +32,14 @@ namespace AT_Notepad.WFA.NetCore.UI
                     case "BtnOne":
                         {
                             this.Hide();
-                            _frmMain.Show();
+                            _firstStyleFrmMain.Show();
                         }
                         break;
 
                     case "BtnTwo":
                         {
-                            MessageBox.Show("Is being implemented.", "Pending", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
+                            this.Hide();
+                            _secondStyleFrmMain.Show();
                         }
                         break;
                 }

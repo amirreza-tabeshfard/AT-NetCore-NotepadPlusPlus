@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>AT_Notepad.WFA.NetCore.UC</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AT-Notepad.WFA.NetCore.Common\AT-Notepad.WFA.NetCore.Common.csproj" />
+  </ItemGroup>
+
+</Project>

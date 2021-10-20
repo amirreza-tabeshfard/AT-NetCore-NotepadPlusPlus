@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AT-Notepad.WFA.NetCore.UI",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AT-Notepad.WFA.NetCore.Infrastructure", "[Windows Form Application]\AT-Notepad.WFA.NetCore.Infrastructure\AT-Notepad.WFA.NetCore.Infrastructure.csproj", "{509799C8-FFF8-4B6B-8A07-7D426E8C76E7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AT-Notepad.WFA.NetCore.UC", "[Windows Form Application]\AT-Notepad.WFA.NetCore.UC\AT-Notepad.WFA.NetCore.UC.csproj", "{5D864287-8231-441E-A64A-20554DA733F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{509799C8-FFF8-4B6B-8A07-7D426E8C76E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{509799C8-FFF8-4B6B-8A07-7D426E8C76E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{509799C8-FFF8-4B6B-8A07-7D426E8C76E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D864287-8231-441E-A64A-20554DA733F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D864287-8231-441E-A64A-20554DA733F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D864287-8231-441E-A64A-20554DA733F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D864287-8231-441E-A64A-20554DA733F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{18732727-0314-403D-B75E-CDE87A01444E} = {52F6F511-E446-4C94-B85B-C7F93D506A7C}
 		{81828091-9260-413A-88AF-AEB95D637DB2} = {52F6F511-E446-4C94-B85B-C7F93D506A7C}
 		{509799C8-FFF8-4B6B-8A07-7D426E8C76E7} = {52F6F511-E446-4C94-B85B-C7F93D506A7C}
+		{5D864287-8231-441E-A64A-20554DA733F4} = {52F6F511-E446-4C94-B85B-C7F93D506A7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE24E37A-A958-4956-B458-415AE306CB83}
