@@ -1,7 +1,7 @@
 ﻿
 namespace AT_Notepad.WFA.NetCore.UI
 {
-    partial class FrmCase
+    partial class FrmStyle
     {
         /// <summary>
         /// Required designer variable.

@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using AT_Notepad.WFA.NetCore.Common.Extensions;
-using AT_Notepad.WFA.NetCore.Infrastructure.First_Case;
+using AT_Notepad.WFA.NetCore.Infrastructure.First_Style;
 
-namespace AT_Notepad.WFA.NetCore.UI.First_Case
+namespace AT_Notepad.WFA.NetCore.UI.First_Style
 {
     public partial class FrmFind : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace AT_Notepad.WFA.NetCore.Infrastructure.First_Case
+﻿namespace AT_Notepad.WFA.NetCore.Infrastructure.First_Style
 {
     public static class CONST
     {

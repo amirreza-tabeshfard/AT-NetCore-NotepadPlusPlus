@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace AT_Notepad.WFA.NetCore.Infrastructure.First_Case
+namespace AT_Notepad.WFA.NetCore.Infrastructure.First_Style
 {
     [Serializable]
     public class FormatConfiguration

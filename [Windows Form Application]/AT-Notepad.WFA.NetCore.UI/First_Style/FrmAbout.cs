@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace AT_Notepad.WFA.NetCore.UI.First_Case
+namespace AT_Notepad.WFA.NetCore.UI.First_Style
 {
     partial class FrmAbout : Form
     {

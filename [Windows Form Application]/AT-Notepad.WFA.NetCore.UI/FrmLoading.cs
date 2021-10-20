@@ -7,7 +7,7 @@ namespace AT_Notepad.WFA.NetCore.UI
     {
         #region Field(s)
 
-        private readonly FrmCase _frmCase;
+        private readonly FrmStyle _frmStyle;
 
         #endregion
 
@@ -18,7 +18,7 @@ namespace AT_Notepad.WFA.NetCore.UI
         public FrmLoading()
         {
             InitializeComponent();
-            _frmCase = new FrmCase();
+            _frmStyle = new FrmStyle();
         }
 
         #endregion
@@ -33,7 +33,7 @@ namespace AT_Notepad.WFA.NetCore.UI
             {
                 timer.Enabled = false;
                 this.Hide();
-                _frmCase.Show();
+                _frmStyle.Show();
             }
         } 
 

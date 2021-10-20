@@ -1,5 +1,5 @@
 ﻿
-namespace AT_Notepad.WFA.NetCore.UI.First_Case
+namespace AT_Notepad.WFA.NetCore.UI.First_Style
 {
     partial class FrmFind
     {
