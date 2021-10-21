@@ -26,8 +26,13 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
         private void FrmMain_Load(object sender, EventArgs e)
         {
 
-        } 
+        }
 
         #endregion
+
+        private void splitContainer_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

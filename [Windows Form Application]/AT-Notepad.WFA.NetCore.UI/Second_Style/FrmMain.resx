@@ -57,13 +57,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TopPanelLeft.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAABGdBTUEAALGPC/xhBQAAADBQTFRFAAAA
+        ERERIiIiMzMzREREVVVVZmZmd3d3iIiImZmZqqqqu7u7zMzM3d3d7u7u////exAYCgAAAAd0SU1FB+UK
+        FBEOFfEs+NoAAAGySURBVCjPHZFBTxNBFMf3MxmiXwAhepALWzTRky6LVk4IadqkXKRl5eDBoOlW24tp
+        aLfECyLtbOsFCtLd9uABYXeGU6OFzntfAKa+6Zxm3i/v/f/vPwYCAAIOS/d/0lUZgKhGNw/27MwzqgPx
+        m/JKJZ/Z58keFQyAwULy1bB8HL8OqNNA/DPoZ66y28PlcKw0h3+t9KDkSnk22wdDCd7xn0YCY7cznaT5
+        IPa5gChvp9tXVt8AKS/l6ZrtMv+i/WGd9OT5ou01P1m7fx/9ntP8vN7Mp7xWGNUPvxko5WgtxQ6s1tH7
+        0S7NUyKuN1btojgrnVxqfSE+OtXNEMbxdo/0yUAzl0j1UB1bZc2l6Lxr+F/Go7dmFmlfyS82Eu1InMzP
+        ZPW+ZHyrKpS3MpWuqwmPLRvVD9N8WFTEb3n0+fvyr+dTS4WCnnfL+ZsnL+7cq23c3dH9yEOvYhYP5h8X
+        togjcP71JVudcRue0P0YB93KdJrVWjjJS113j2Z9RlDnS59wzVjQKPpBwAX5U3Baq+UWU47jeuEk3241
+        ZybsTcfRbyTDAWt6jPlBKHS+dCTnXEoAgP/h/VDueNM3UAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="menuStripControls.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="menuStripControls.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="toolStripControls.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <metadata name="toolStripControls.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>171, 17</value>
+  </metadata>
   <data name="ToolStrip_New.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -190,4 +210,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>315, 17</value>
+  </metadata>
 </root>

@@ -121,11 +121,30 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             this.ToolStrip_GoTo = new System.Windows.Forms.ToolStripButton();
             this.ToolStrip_Font = new System.Windows.Forms.ToolStripButton();
             this.ToolStrip_PreviewHTMLPage = new System.Windows.Forms.ToolStripButton();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.statusStrip_lblAbout = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip_lblSpace01 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip_lblFileName = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip_lblSpace02 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip_lblLine = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip_lblSpace03 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip_lblColumn = new System.Windows.Forms.ToolStripStatusLabel();
+            this.splitContainer = new System.Windows.Forms.SplitContainer();
+            this.treeView = new System.Windows.Forms.TreeView();
+            this.panelDocumentSelector = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabControls = new AT_Notepad.WFA.NetCore.UC.Second_Style.TabControls();
             this.TopPanel.SuspendLayout();
             this.panelMenuStrip.SuspendLayout();
             this.menuStripControls.SuspendLayout();
             this.panelToolStrip.SuspendLayout();
             this.toolStripControls.SuspendLayout();
+            this.statusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
+            this.splitContainer.Panel1.SuspendLayout();
+            this.splitContainer.Panel2.SuspendLayout();
+            this.splitContainer.SuspendLayout();
+            this.panelDocumentSelector.SuspendLayout();
             this.SuspendLayout();
             // 
             // TopPanel
@@ -213,7 +232,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // TopPanelLeft
             // 
-            this.TopPanelLeft.BackgroundImage = Common.Extensions.ImageExtensions.ToImage(Common.Extensions.ImageExtensions.ImageToByteArray(Resource.Images.PNG.NotePad));
+            this.TopPanelLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TopPanelLeft.BackgroundImage")));
             this.TopPanelLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TopPanelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.TopPanelLeft.Location = new System.Drawing.Point(0, 0);
@@ -889,12 +908,152 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             this.ToolStrip_PreviewHTMLPage.Size = new System.Drawing.Size(23, 22);
             this.ToolStrip_PreviewHTMLPage.Text = "Preview HTML Page";
             // 
+            // statusStrip
+            // 
+            this.statusStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusStrip_lblAbout,
+            this.statusStrip_lblSpace01,
+            this.statusStrip_lblFileName,
+            this.statusStrip_lblSpace02,
+            this.statusStrip_lblLine,
+            this.statusStrip_lblSpace03,
+            this.statusStrip_lblColumn});
+            this.statusStrip.Location = new System.Drawing.Point(0, 478);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip.TabIndex = 4;
+            // 
+            // statusStrip_lblAbout
+            // 
+            this.statusStrip_lblAbout.ForeColor = System.Drawing.Color.White;
+            this.statusStrip_lblAbout.Name = "statusStrip_lblAbout";
+            this.statusStrip_lblAbout.Size = new System.Drawing.Size(39, 17);
+            this.statusStrip_lblAbout.Text = "Ready";
+            // 
+            // statusStrip_lblSpace01
+            // 
+            this.statusStrip_lblSpace01.Name = "statusStrip_lblSpace01";
+            this.statusStrip_lblSpace01.Size = new System.Drawing.Size(235, 17);
+            this.statusStrip_lblSpace01.Text = "                                                                            ";
+            // 
+            // statusStrip_lblFileName
+            // 
+            this.statusStrip_lblFileName.ForeColor = System.Drawing.Color.White;
+            this.statusStrip_lblFileName.Name = "statusStrip_lblFileName";
+            this.statusStrip_lblFileName.Size = new System.Drawing.Size(104, 17);
+            this.statusStrip_lblFileName.Text = "Notepad ( Style 2 )";
+            // 
+            // statusStrip_lblSpace02
+            // 
+            this.statusStrip_lblSpace02.Name = "statusStrip_lblSpace02";
+            this.statusStrip_lblSpace02.Size = new System.Drawing.Size(265, 17);
+            this.statusStrip_lblSpace02.Text = "                                                                                 " +
+    "     ";
+            // 
+            // statusStrip_lblLine
+            // 
+            this.statusStrip_lblLine.ForeColor = System.Drawing.Color.White;
+            this.statusStrip_lblLine.Name = "statusStrip_lblLine";
+            this.statusStrip_lblLine.Size = new System.Drawing.Size(44, 17);
+            this.statusStrip_lblLine.Text = "Line : 1";
+            // 
+            // statusStrip_lblSpace03
+            // 
+            this.statusStrip_lblSpace03.Name = "statusStrip_lblSpace03";
+            this.statusStrip_lblSpace03.Size = new System.Drawing.Size(46, 17);
+            this.statusStrip_lblSpace03.Text = "             ";
+            // 
+            // statusStrip_lblColumn
+            // 
+            this.statusStrip_lblColumn.ForeColor = System.Drawing.Color.White;
+            this.statusStrip_lblColumn.Name = "statusStrip_lblColumn";
+            this.statusStrip_lblColumn.Size = new System.Drawing.Size(40, 17);
+            this.statusStrip_lblColumn.Text = "Col : 1";
+            // 
+            // splitContainer
+            // 
+            this.splitContainer.Cursor = System.Windows.Forms.Cursors.VSplit;
+            this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer.Location = new System.Drawing.Point(0, 79);
+            this.splitContainer.Name = "splitContainer";
+            // 
+            // splitContainer.Panel1
+            // 
+            this.splitContainer.Panel1.Controls.Add(this.treeView);
+            this.splitContainer.Panel1.Controls.Add(this.panelDocumentSelector);
+            // 
+            // splitContainer.Panel2
+            // 
+            this.splitContainer.Panel2.Controls.Add(this.tabControls);
+            this.splitContainer.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer_Panel2_Paint);
+            this.splitContainer.Size = new System.Drawing.Size(800, 399);
+            this.splitContainer.SplitterDistance = 169;
+            this.splitContainer.TabIndex = 5;
+            // 
+            // treeView
+            // 
+            this.treeView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.treeView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.treeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.treeView.ForeColor = System.Drawing.Color.White;
+            this.treeView.LineColor = System.Drawing.Color.Teal;
+            this.treeView.Location = new System.Drawing.Point(0, 32);
+            this.treeView.Name = "treeView";
+            this.treeView.ShowPlusMinus = false;
+            this.treeView.ShowRootLines = false;
+            this.treeView.Size = new System.Drawing.Size(169, 367);
+            this.treeView.TabIndex = 1;
+            // 
+            // panelDocumentSelector
+            // 
+            this.panelDocumentSelector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panelDocumentSelector.Controls.Add(this.label1);
+            this.panelDocumentSelector.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDocumentSelector.Location = new System.Drawing.Point(0, 0);
+            this.panelDocumentSelector.Name = "panelDocumentSelector";
+            this.panelDocumentSelector.Size = new System.Drawing.Size(169, 32);
+            this.panelDocumentSelector.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(17, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 18);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Document Selector";
+            // 
+            // tabControls
+            // 
+            this.tabControls.ActiveTabEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(120)))));
+            this.tabControls.ActiveTabStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(120)))));
+            this.tabControls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControls.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.tabControls.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControls.GradientAngle = 90;
+            this.tabControls.Location = new System.Drawing.Point(0, 0);
+            this.tabControls.Name = "tabControls";
+            this.tabControls.NonActiveTabEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tabControls.NonActiveTabStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tabControls.Padding = new System.Drawing.Point(30, 4);
+            this.tabControls.SelectedIndex = 0;
+            this.tabControls.Size = new System.Drawing.Size(627, 399);
+            this.tabControls.TabIndex = 0;
+            this.tabControls.TextColor = System.Drawing.Color.White;
+            this.tabControls.Transparent1 = 150;
+            this.tabControls.Transparent2 = 150;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.splitContainer);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.panelToolStrip);
             this.Controls.Add(this.panelMenuStrip);
             this.Controls.Add(this.TopPanel);
@@ -917,7 +1076,16 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             this.panelToolStrip.PerformLayout();
             this.toolStripControls.ResumeLayout(false);
             this.toolStripControls.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
+            this.splitContainer.Panel1.ResumeLayout(false);
+            this.splitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
+            this.splitContainer.ResumeLayout(false);
+            this.panelDocumentSelector.ResumeLayout(false);
+            this.panelDocumentSelector.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1014,5 +1182,18 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
         private System.Windows.Forms.ToolStripButton ToolStrip_GoTo;
         private System.Windows.Forms.ToolStripButton ToolStrip_Font;
         private System.Windows.Forms.ToolStripButton ToolStrip_PreviewHTMLPage;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.SplitContainer splitContainer;
+        private System.Windows.Forms.TreeView treeView;
+        private System.Windows.Forms.Panel panelDocumentSelector;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripStatusLabel statusStrip_lblAbout;
+        private System.Windows.Forms.ToolStripStatusLabel statusStrip_lblFileName;
+        private System.Windows.Forms.ToolStripStatusLabel statusStrip_lblSpace01;
+        private System.Windows.Forms.ToolStripStatusLabel statusStrip_lblSpace02;
+        private System.Windows.Forms.ToolStripStatusLabel statusStrip_lblLine;
+        private System.Windows.Forms.ToolStripStatusLabel statusStrip_lblSpace03;
+        private System.Windows.Forms.ToolStripStatusLabel statusStrip_lblColumn;
+        private UC.Second_Style.TabControls tabControls;
     }
 }
