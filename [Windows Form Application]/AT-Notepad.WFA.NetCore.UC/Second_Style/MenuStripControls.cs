@@ -9,7 +9,7 @@ namespace AT_Notepad.WFA.NetCore.UC.Second_Style
         
         public MenuStripControls()
         {
-            this.Renderer = new MenuRenderer();
+            this.Renderer = new MenuStripRenderer();
         } 
 
         #endregion

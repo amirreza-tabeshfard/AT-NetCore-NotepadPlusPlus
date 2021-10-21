@@ -25,7 +25,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            TopPanelLeft.BackgroundImage = Common.Extensions.ImageExtensions.ToImage(Common.Extensions.ImageExtensions.ImageToByteArray(Resource.Images.PNG.NotePad));
+
         } 
 
         #endregion

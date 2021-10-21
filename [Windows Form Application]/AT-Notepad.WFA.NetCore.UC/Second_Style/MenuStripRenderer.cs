@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace AT_Notepad.WFA.NetCore.UC.Second_Style
 {
-    internal class MenuRenderer : ToolStripRenderer
+    internal class MenuStripRenderer : ToolStripRenderer
     {
         #region Override
 

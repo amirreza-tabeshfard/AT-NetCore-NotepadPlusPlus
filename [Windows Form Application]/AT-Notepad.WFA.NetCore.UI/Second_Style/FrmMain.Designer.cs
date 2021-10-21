@@ -29,6 +29,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.TopPanel = new System.Windows.Forms.Panel();
             this.BtnMinimum = new AT_Notepad.WFA.NetCore.UC.Second_Style.CloseAndMinimumControls();
             this.BtnMaximum = new AT_Notepad.WFA.NetCore.UC.Second_Style.MinMaxButtonControls();
@@ -97,15 +98,34 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             this.MenuWindow_Restart = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuWindow_Separator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuWindow_CloseAllWindows = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuWindow_Separator2 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelp_Help = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelp_OnlineHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelp_Separator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuHelp_About = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuWindow_Separator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.panelToolStrip = new System.Windows.Forms.Panel();
+            this.toolStripControls = new AT_Notepad.WFA.NetCore.UC.Second_Style.ToolStripControls();
+            this.ToolStrip_New = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Open = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Save = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_SaveAs = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Print = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Separator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolStrip_Undo = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Redo = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Cut = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Copy = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Paste = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Find = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_GoTo = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_Font = new System.Windows.Forms.ToolStripButton();
+            this.ToolStrip_PreviewHTMLPage = new System.Windows.Forms.ToolStripButton();
             this.TopPanel.SuspendLayout();
             this.panelMenuStrip.SuspendLayout();
             this.menuStripControls.SuspendLayout();
+            this.panelToolStrip.SuspendLayout();
+            this.toolStripControls.SuspendLayout();
             this.SuspendLayout();
             // 
             // TopPanel
@@ -193,6 +213,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // TopPanelLeft
             // 
+            this.TopPanelLeft.BackgroundImage = Common.Extensions.ImageExtensions.ToImage(Common.Extensions.ImageExtensions.ImageToByteArray(Resource.Images.PNG.NotePad));
             this.TopPanelLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TopPanelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.TopPanelLeft.Location = new System.Drawing.Point(0, 0);
@@ -662,6 +683,11 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             this.MenuWindow_CloseAllWindows.Size = new System.Drawing.Size(182, 22);
             this.MenuWindow_CloseAllWindows.Text = "Close All Windows";
             // 
+            // MenuWindow_Separator2
+            // 
+            this.MenuWindow_Separator2.Name = "MenuWindow_Separator2";
+            this.MenuWindow_Separator2.Size = new System.Drawing.Size(179, 6);
+            // 
             // MenuHelp
             // 
             this.MenuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -698,10 +724,170 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             this.MenuHelp_About.Size = new System.Drawing.Size(141, 22);
             this.MenuHelp_About.Text = "About";
             // 
-            // MenuWindow_Separator2
+            // panelToolStrip
             // 
-            this.MenuWindow_Separator2.Name = "MenuWindow_Separator2";
-            this.MenuWindow_Separator2.Size = new System.Drawing.Size(6, 6);
+            this.panelToolStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panelToolStrip.Controls.Add(this.toolStripControls);
+            this.panelToolStrip.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelToolStrip.Location = new System.Drawing.Point(0, 54);
+            this.panelToolStrip.Name = "panelToolStrip";
+            this.panelToolStrip.Size = new System.Drawing.Size(800, 25);
+            this.panelToolStrip.TabIndex = 2;
+            // 
+            // toolStripControls
+            // 
+            this.toolStripControls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.toolStripControls.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStrip_New,
+            this.ToolStrip_Open,
+            this.ToolStrip_Save,
+            this.ToolStrip_SaveAs,
+            this.ToolStrip_Print,
+            this.ToolStrip_Separator1,
+            this.ToolStrip_Undo,
+            this.ToolStrip_Redo,
+            this.ToolStrip_Cut,
+            this.ToolStrip_Copy,
+            this.ToolStrip_Paste,
+            this.ToolStrip_Find,
+            this.ToolStrip_GoTo,
+            this.ToolStrip_Font,
+            this.ToolStrip_PreviewHTMLPage});
+            this.toolStripControls.Location = new System.Drawing.Point(0, 0);
+            this.toolStripControls.Name = "toolStripControls";
+            this.toolStripControls.Size = new System.Drawing.Size(800, 25);
+            this.toolStripControls.TabIndex = 0;
+            // 
+            // ToolStrip_New
+            // 
+            this.ToolStrip_New.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_New.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_New.Image")));
+            this.ToolStrip_New.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_New.Name = "ToolStrip_New";
+            this.ToolStrip_New.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_New.Text = "New";
+            // 
+            // ToolStrip_Open
+            // 
+            this.ToolStrip_Open.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Open.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Open.Image")));
+            this.ToolStrip_Open.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Open.Name = "ToolStrip_Open";
+            this.ToolStrip_Open.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Open.Text = "Open";
+            // 
+            // ToolStrip_Save
+            // 
+            this.ToolStrip_Save.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Save.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Save.Image")));
+            this.ToolStrip_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Save.Name = "ToolStrip_Save";
+            this.ToolStrip_Save.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Save.Text = "Save";
+            // 
+            // ToolStrip_SaveAs
+            // 
+            this.ToolStrip_SaveAs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_SaveAs.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_SaveAs.Image")));
+            this.ToolStrip_SaveAs.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_SaveAs.Name = "ToolStrip_SaveAs";
+            this.ToolStrip_SaveAs.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_SaveAs.Text = "Save As ...";
+            // 
+            // ToolStrip_Print
+            // 
+            this.ToolStrip_Print.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Print.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Print.Image")));
+            this.ToolStrip_Print.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Print.Name = "ToolStrip_Print";
+            this.ToolStrip_Print.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Print.Text = "Print";
+            // 
+            // ToolStrip_Separator1
+            // 
+            this.ToolStrip_Separator1.Name = "ToolStrip_Separator1";
+            this.ToolStrip_Separator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // ToolStrip_Undo
+            // 
+            this.ToolStrip_Undo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Undo.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Undo.Image")));
+            this.ToolStrip_Undo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Undo.Name = "ToolStrip_Undo";
+            this.ToolStrip_Undo.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Undo.Text = "Undo";
+            // 
+            // ToolStrip_Redo
+            // 
+            this.ToolStrip_Redo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Redo.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Redo.Image")));
+            this.ToolStrip_Redo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Redo.Name = "ToolStrip_Redo";
+            this.ToolStrip_Redo.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Redo.Text = "Redo";
+            // 
+            // ToolStrip_Cut
+            // 
+            this.ToolStrip_Cut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Cut.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Cut.Image")));
+            this.ToolStrip_Cut.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Cut.Name = "ToolStrip_Cut";
+            this.ToolStrip_Cut.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Cut.Text = "Cut";
+            // 
+            // ToolStrip_Copy
+            // 
+            this.ToolStrip_Copy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Copy.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Copy.Image")));
+            this.ToolStrip_Copy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Copy.Name = "ToolStrip_Copy";
+            this.ToolStrip_Copy.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Copy.Text = "Copy";
+            // 
+            // ToolStrip_Paste
+            // 
+            this.ToolStrip_Paste.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Paste.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Paste.Image")));
+            this.ToolStrip_Paste.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Paste.Name = "ToolStrip_Paste";
+            this.ToolStrip_Paste.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Paste.Text = "Paste";
+            // 
+            // ToolStrip_Find
+            // 
+            this.ToolStrip_Find.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Find.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Find.Image")));
+            this.ToolStrip_Find.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Find.Name = "ToolStrip_Find";
+            this.ToolStrip_Find.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Find.Text = "Find";
+            // 
+            // ToolStrip_GoTo
+            // 
+            this.ToolStrip_GoTo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_GoTo.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_GoTo.Image")));
+            this.ToolStrip_GoTo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_GoTo.Name = "ToolStrip_GoTo";
+            this.ToolStrip_GoTo.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_GoTo.Text = "Go To";
+            // 
+            // ToolStrip_Font
+            // 
+            this.ToolStrip_Font.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_Font.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_Font.Image")));
+            this.ToolStrip_Font.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_Font.Name = "ToolStrip_Font";
+            this.ToolStrip_Font.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_Font.Text = "Font";
+            // 
+            // ToolStrip_PreviewHTMLPage
+            // 
+            this.ToolStrip_PreviewHTMLPage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolStrip_PreviewHTMLPage.Image = ((System.Drawing.Image)(resources.GetObject("ToolStrip_PreviewHTMLPage.Image")));
+            this.ToolStrip_PreviewHTMLPage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolStrip_PreviewHTMLPage.Name = "ToolStrip_PreviewHTMLPage";
+            this.ToolStrip_PreviewHTMLPage.Size = new System.Drawing.Size(23, 22);
+            this.ToolStrip_PreviewHTMLPage.Text = "Preview HTML Page";
             // 
             // FrmMain
             // 
@@ -709,6 +895,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.panelToolStrip);
             this.Controls.Add(this.panelMenuStrip);
             this.Controls.Add(this.TopPanel);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -726,6 +913,10 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             this.panelMenuStrip.PerformLayout();
             this.menuStripControls.ResumeLayout(false);
             this.menuStripControls.PerformLayout();
+            this.panelToolStrip.ResumeLayout(false);
+            this.panelToolStrip.PerformLayout();
+            this.toolStripControls.ResumeLayout(false);
+            this.toolStripControls.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -806,5 +997,22 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
         private System.Windows.Forms.ToolStripSeparator MenuHelp_Separator1;
         private System.Windows.Forms.ToolStripMenuItem MenuHelp_About;
         private System.Windows.Forms.ToolStripSeparator MenuWindow_Separator2;
+        private System.Windows.Forms.Panel panelToolStrip;
+        private UC.Second_Style.ToolStripControls toolStripControls;
+        private System.Windows.Forms.ToolStripButton ToolStrip_New;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Open;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Save;
+        private System.Windows.Forms.ToolStripButton ToolStrip_SaveAs;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Print;
+        private System.Windows.Forms.ToolStripSeparator ToolStrip_Separator1;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Undo;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Redo;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Cut;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Copy;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Paste;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Find;
+        private System.Windows.Forms.ToolStripButton ToolStrip_GoTo;
+        private System.Windows.Forms.ToolStripButton ToolStrip_Font;
+        private System.Windows.Forms.ToolStripButton ToolStrip_PreviewHTMLPage;
     }
 }
