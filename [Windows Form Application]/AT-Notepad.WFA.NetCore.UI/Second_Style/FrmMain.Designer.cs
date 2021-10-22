@@ -721,27 +721,31 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuHelp_Help
             // 
+            this.MenuHelp_Help.ForeColor = System.Drawing.Color.White;
             this.MenuHelp_Help.Name = "MenuHelp_Help";
             this.MenuHelp_Help.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.MenuHelp_Help.Size = new System.Drawing.Size(141, 22);
+            this.MenuHelp_Help.Size = new System.Drawing.Size(180, 22);
             this.MenuHelp_Help.Text = "Help";
             // 
             // MenuHelp_OnlineHelp
             // 
+            this.MenuHelp_OnlineHelp.ForeColor = System.Drawing.Color.White;
             this.MenuHelp_OnlineHelp.Name = "MenuHelp_OnlineHelp";
-            this.MenuHelp_OnlineHelp.Size = new System.Drawing.Size(141, 22);
+            this.MenuHelp_OnlineHelp.Size = new System.Drawing.Size(180, 22);
             this.MenuHelp_OnlineHelp.Text = "Online Help";
             // 
             // MenuHelp_Separator1
             // 
             this.MenuHelp_Separator1.Name = "MenuHelp_Separator1";
-            this.MenuHelp_Separator1.Size = new System.Drawing.Size(138, 6);
+            this.MenuHelp_Separator1.Size = new System.Drawing.Size(177, 6);
             // 
             // MenuHelp_About
             // 
+            this.MenuHelp_About.ForeColor = System.Drawing.Color.White;
             this.MenuHelp_About.Name = "MenuHelp_About";
-            this.MenuHelp_About.Size = new System.Drawing.Size(141, 22);
+            this.MenuHelp_About.Size = new System.Drawing.Size(180, 22);
             this.MenuHelp_About.Text = "About";
+            this.MenuHelp_About.Click += new System.EventHandler(this.MenuHelp_About_Click);
             // 
             // panelToolStrip
             // 
@@ -986,7 +990,6 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.tabControls);
-            this.splitContainer.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer_Panel2_Paint);
             this.splitContainer.Size = new System.Drawing.Size(800, 399);
             this.splitContainer.SplitterDistance = 169;
             this.splitContainer.TabIndex = 5;
@@ -1032,7 +1035,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             this.tabControls.ActiveTabStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(120)))));
             this.tabControls.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControls.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.tabControls.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControls.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tabControls.GradientAngle = 90;
             this.tabControls.Location = new System.Drawing.Point(0, 0);
             this.tabControls.Name = "tabControls";
