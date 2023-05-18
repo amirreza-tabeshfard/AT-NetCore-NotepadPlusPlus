@@ -22,24 +22,6 @@
 		</a>
 	</p>
 </div>
-<div>
-	<p align="center" dir="rtl">
-		<strong>
-			نویسنده
-		</strong>
-		: امیررضا تابش فرد
-		(
-			<span>
-				<img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" style="width: 20px; height: 20px; margin: 0px;">
-			</span>
-			<span>
-				<a href="https://www.instagram.com/WebNestDotNet/" target="_blank">
-					WebNestDotNet
-				</a>
-			</span>
-		)
-	</p>
-</div>
 
 ## کاربرد دفترچه یادداشت چیست
 <div>
