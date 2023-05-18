@@ -22,24 +22,6 @@ English | [فارسی](./README.fa-IR.md)
 		</a>
 	</p>
 </div>
-<div>
-	<p align="center">
-		<strong>
-			Author
-		</strong>
-		: Amirreza Tabeshfard
-		(
-			<span>
-				<img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" style="width: 20px; height: 20px; margin: 0px;">
-			</span>
-			<span>
-				<a href="https://www.instagram.com/WebNestDotNet/" target="_blank">
-					WebNestDotNet
-				</a>
-			</span>
-		)
-	</p>
-</div>
 
 
 ## What is the use of a notebook?
