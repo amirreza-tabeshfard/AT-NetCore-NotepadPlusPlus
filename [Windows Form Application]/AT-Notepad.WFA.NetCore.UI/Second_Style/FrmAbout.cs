@@ -7,8 +7,8 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
     partial class FrmAbout : Form
     {
         #region Field(s)
-        
-        readonly Random random; 
+
+        readonly Random random;
 
         #endregion
 
@@ -25,7 +25,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             labelCopyright.Text = AssemblyCopyright;
             labelCompanyName.Text = AssemblyCompany;
             textBoxDescription.Text = AssemblyDescription;
-        } 
+        }
 
         #endregion
 

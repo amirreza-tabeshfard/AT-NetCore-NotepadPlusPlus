@@ -38,12 +38,21 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
 
         #endregion
 
+        #region Event(s) ==> Menu File
+
+        private void MenuFile_New_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
+
         #region Event(s) ==> Menu Help
-        
+
         private void MenuHelp_About_Click(object sender, EventArgs e)
         {
             _frmAbout.ShowDialog();
-        } 
+        }
 
         #endregion
     }
