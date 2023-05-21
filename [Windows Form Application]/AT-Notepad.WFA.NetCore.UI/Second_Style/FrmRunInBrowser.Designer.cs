@@ -1,6 +1,6 @@
 ﻿namespace AT_Notepad.WFA.NetCore.UI.Second_Style
 {
-    partial class FormRunInBrowser
+    partial class FrmRunInBrowser
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,8 @@
             lblFindWhat = new System.Windows.Forms.Label();
             txtBrowser = new System.Windows.Forms.TextBox();
             btnBrowse = new System.Windows.Forms.Button();
-            button1 = new System.Windows.Forms.Button();
+            btnRun = new System.Windows.Forms.Button();
+            openFileDialog = new System.Windows.Forms.OpenFileDialog();
             SuspendLayout();
             // 
             // lblFindWhat
@@ -58,22 +59,28 @@
             btnBrowse.TabIndex = 6;
             btnBrowse.Text = "...";
             btnBrowse.UseVisualStyleBackColor = true;
+            btnBrowse.Click += btnBrowse_Click;
             // 
-            // button1
+            // btnRun
             // 
-            button1.Location = new System.Drawing.Point(12, 92);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(75, 23);
-            button1.TabIndex = 12;
-            button1.Text = "Run";
-            button1.UseVisualStyleBackColor = true;
+            btnRun.Location = new System.Drawing.Point(12, 92);
+            btnRun.Name = "btnRun";
+            btnRun.Size = new System.Drawing.Size(75, 23);
+            btnRun.TabIndex = 12;
+            btnRun.Text = "Run";
+            btnRun.UseVisualStyleBackColor = true;
+            btnRun.Click += btnRun_Click;
+            // 
+            // openFileDialog
+            // 
+            openFileDialog.Filter = "exe files|*.exe";
             // 
             // FormRunInBrowser
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(390, 127);
-            Controls.Add(button1);
+            Controls.Add(btnRun);
             Controls.Add(btnBrowse);
             Controls.Add(txtBrowser);
             Controls.Add(lblFindWhat);
@@ -92,6 +99,7 @@
         private System.Windows.Forms.Label lblFindWhat;
         private System.Windows.Forms.TextBox txtBrowser;
         private System.Windows.Forms.Button btnBrowse;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRun;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }

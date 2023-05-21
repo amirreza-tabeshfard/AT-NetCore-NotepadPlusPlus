@@ -3,7 +3,7 @@
         Created on this date:               Sunday - 2021 10 October
 
         Last updated by the author:         Amirreza Tabeshfard
-        Last updated on this date:          Friday - 2021 22 October (17:56)
+        Last updated on this date:          Monday - 2023 22 May
 */
 using System;
 using System.Windows.Forms;
