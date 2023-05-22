@@ -1,8 +1,7 @@
-﻿namespace AT_Notepad.WFA.NetCore.Infrastructure.First_Style
+﻿namespace AT_Notepad.WFA.NetCore.Infrastructure.First_Style;
+
+public class ContentPosition
 {
-    public class ContentPosition
-    {
-        public int LineIndex;
-        public int ColumnIndex;
-    }
+    public int LineIndex;
+    public int ColumnIndex;
 }

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <RootNamespace>AT_Notepad.WFA.NetCore.UI</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <Description></Description>

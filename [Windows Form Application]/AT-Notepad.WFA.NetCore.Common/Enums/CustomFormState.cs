@@ -1,9 +1,8 @@
-﻿namespace AT_Notepad.WFA.NetCore.Common.Enums
-{
-    public enum CustomFormState : sbyte
-    {
-        Normal = 1,
+﻿namespace AT_Notepad.WFA.NetCore.Common.Enums;
 
-        Maximize = 2
-    }
+public enum CustomFormState : sbyte
+{
+    Normal = 1,
+
+    Maximize = 2
 }

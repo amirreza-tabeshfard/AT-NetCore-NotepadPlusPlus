@@ -8,18 +8,17 @@
 using System;
 using System.Windows.Forms;
 
-namespace AT_Notepad.WFA.NetCore.UI
+namespace AT_Notepad.WFA.NetCore.UI;
+
+static class Program
 {
-    static class Program
+    [STAThread]
+    [Obsolete]
+    static void Main()
     {
-        [STAThread]
-        [Obsolete]
-        static void Main()
-        {
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLoading());
-        }
+        Application.SetHighDpiMode(HighDpiMode.SystemAware);
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new FrmLoading());
     }
 }
