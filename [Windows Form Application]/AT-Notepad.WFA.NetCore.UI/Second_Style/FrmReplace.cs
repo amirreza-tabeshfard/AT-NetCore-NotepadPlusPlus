@@ -13,9 +13,10 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
 
         #region Constructor
 
-        public FrmReplace()
+        public FrmReplace(RichTextBox richTextBox)
         {
             InitializeComponent();
+            _richtext = richTextBox;
         } 
 
         #endregion

@@ -9,15 +9,16 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
     {
         #region Field(s)
 
-        private String filename = default;
+        private String _filename = default;
 
         #endregion
 
         #region Constructor
 
-        public FrmRunInBrowser()
+        public FrmRunInBrowser(string filename)
         {
             InitializeComponent();
+            _filename = filename;
         }
 
         #endregion
@@ -30,10 +31,10 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
 
         private void btnRun_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtBrowser.Text) && !string.IsNullOrEmpty(filename))
+            if (!string.IsNullOrEmpty(txtBrowser.Text) && !string.IsNullOrEmpty(_filename))
                 if (File.Exists(txtBrowser.Text))
                 {
-                    Process.Start(txtBrowser.Text, filename);
+                    Process.Start(txtBrowser.Text, _filename);
                     this.Close();
                 }
         }
