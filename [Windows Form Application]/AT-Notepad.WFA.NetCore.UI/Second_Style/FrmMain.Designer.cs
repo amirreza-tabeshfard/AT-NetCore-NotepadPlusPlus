@@ -29,6 +29,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             TopPanel = new System.Windows.Forms.Panel();
             BtnMinimum = new UC.Second_Style.CloseAndMinimumControls();
@@ -134,6 +135,12 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             panelDocumentSelector = new System.Windows.Forms.Panel();
             label1 = new System.Windows.Forms.Label();
             tabControls = new UC.Second_Style.TabControls();
+            openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            printDocument = new System.Drawing.Printing.PrintDocument();
+            printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
+            toolTip = new System.Windows.Forms.ToolTip(components);
+            imageList = new System.Windows.Forms.ImageList(components);
             TopPanel.SuspendLayout();
             panelMenuStrip.SuspendLayout();
             menuStripControls.SuspendLayout();
@@ -161,6 +168,9 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             TopPanel.Name = "TopPanel";
             TopPanel.Size = new System.Drawing.Size(800, 30);
             TopPanel.TabIndex = 0;
+            TopPanel.MouseDown += TopPanel_MouseDown;
+            TopPanel.MouseMove += TopPanel_MouseMove;
+            TopPanel.MouseUp += TopPanel_MouseUp;
             // 
             // BtnMinimum
             // 
@@ -180,6 +190,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             BtnMinimum.TextLocation_X = 6;
             BtnMinimum.TextLocation_Y = -12;
             BtnMinimum.UseVisualStyleBackColor = true;
+            BtnMinimum.Click += BtnMinimum_Click;
             // 
             // BtnMaximum
             // 
@@ -199,6 +210,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             BtnMaximum.TextLocation_X = 8;
             BtnMaximum.TextLocation_Y = 7;
             BtnMaximum.UseVisualStyleBackColor = true;
+            BtnMaximum.Click += BtnMaximum_Click;
             // 
             // BtnClose
             // 
@@ -219,6 +231,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             BtnClose.TextLocation_X = 6;
             BtnClose.TextLocation_Y = -1;
             BtnClose.UseVisualStyleBackColor = false;
+            BtnClose.Click += BtnClose_Click;
             // 
             // lblTitle
             // 
@@ -967,6 +980,30 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             tabControls.Transparent1 = 150;
             tabControls.Transparent2 = 150;
             // 
+            // openFileDialog
+            // 
+            openFileDialog.Filter = "All files |*.*; | C-C++ files|*.c; *.cpp; | Text Files |*.txt; | HTML Files |*.html; *.htm;";
+            // 
+            // saveFileDialog
+            // 
+            saveFileDialog.Filter = "All files |*.*; | C-C++ files|*.c; *.cpp; | Text Files |*.txt; | HTML Files |*.html; *.htm;";
+            // 
+            // printPreviewDialog
+            // 
+            printPreviewDialog.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            printPreviewDialog.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            printPreviewDialog.ClientSize = new System.Drawing.Size(400, 300);
+            printPreviewDialog.Enabled = true;
+            printPreviewDialog.Icon = (System.Drawing.Icon)resources.GetObject("printPreviewDialog.Icon");
+            printPreviewDialog.Name = "printPreviewDialog";
+            printPreviewDialog.Visible = false;
+            // 
+            // imageList
+            // 
+            imageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            imageList.ImageSize = new System.Drawing.Size(16, 16);
+            imageList.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -1115,5 +1152,11 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
         private System.Windows.Forms.ToolStripStatusLabel statusStrip_lblSpace03;
         private System.Windows.Forms.ToolStripStatusLabel statusStrip_lblColumn;
         private UC.Second_Style.TabControls tabControls;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Drawing.Printing.PrintDocument printDocument;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
+        private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.ImageList imageList;
     }
 }
