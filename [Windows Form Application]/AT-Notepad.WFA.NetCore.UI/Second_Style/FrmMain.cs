@@ -153,9 +153,225 @@ public partial class FrmMain : Form
 
     }
 
+    private void MenuFile_Open_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuFile_Save_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuFile_SaveAs_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuFile_SaveAll_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuFile_Close_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuFile_CloseAll_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuFile_OpenInSystemEditor_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuFile_Print_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuFile_PrintPreview_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuFile_Exit_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    #endregion
+
+    #region Event(s) ==> Menu Edit
+
+    private void MenuEdit_Undo_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_Redo_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_Cut_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_Copy_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_Paste_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_Find_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_Replace_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_GoTo_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_SelectAll_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_ChangeCase_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_NextDocument_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuEdit_PreviousDocument_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    #endregion
+
+    #region Event(s) ==> Menu View
+
+    private void MenuView_Font_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuView_ForeColor_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuView_BackColor_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuView_DocumentSelector_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuView_ToolStrip_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuView_StatusStrip_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuView_FullScreen_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuView_TabsAlign_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    #endregion
+
+    #region Event(s) ==> Menu Run
+
+    private void MenuRun_Run_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuRun_RunInBrowser_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuRun_PreviewHTMLPage_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuRun_GoogleSearch_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuRun_Facebook_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuRun_Twitter_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    #endregion
+
+    #region Event(s) ==> Menu Window
+
+    private void MenuWindow_Restart_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuWindow_CloseAllWindows_Click(object sender, EventArgs e)
+    {
+
+    }
+
     #endregion
 
     #region Event(s) ==> Menu Help
+
+    private void MenuHelp_Help_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MenuHelp_OnlineHelp_Click(object sender, EventArgs e)
+    {
+
+    }
 
     private void MenuHelp_About_Click(object sender, EventArgs e)
     {
