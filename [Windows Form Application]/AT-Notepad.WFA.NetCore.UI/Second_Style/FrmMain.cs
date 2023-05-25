@@ -381,4 +381,73 @@ public partial class FrmMain : Form
     #endregion
 
     #endregion
+
+    #region ToolStrip(s)
+
+    private void ToolStrip_New_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_Open_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_Save_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_SaveAs_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_Undo_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_Redo_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_Cut_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_Copy_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_Paste_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_Find_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_GoTo_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_Font_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ToolStrip_PreviewHTMLPage_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    #endregion
 }

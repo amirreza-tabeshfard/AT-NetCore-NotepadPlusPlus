@@ -744,7 +744,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuHelp_Help.ForeColor = System.Drawing.Color.White;
             MenuHelp_Help.Name = "MenuHelp_Help";
             MenuHelp_Help.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            MenuHelp_Help.Size = new System.Drawing.Size(180, 22);
+            MenuHelp_Help.Size = new System.Drawing.Size(141, 22);
             MenuHelp_Help.Text = "Help";
             MenuHelp_Help.Click += MenuHelp_Help_Click;
             // 
@@ -752,20 +752,20 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             MenuHelp_OnlineHelp.ForeColor = System.Drawing.Color.White;
             MenuHelp_OnlineHelp.Name = "MenuHelp_OnlineHelp";
-            MenuHelp_OnlineHelp.Size = new System.Drawing.Size(180, 22);
+            MenuHelp_OnlineHelp.Size = new System.Drawing.Size(141, 22);
             MenuHelp_OnlineHelp.Text = "Online Help";
             MenuHelp_OnlineHelp.Click += MenuHelp_OnlineHelp_Click;
             // 
             // MenuHelp_Separator1
             // 
             MenuHelp_Separator1.Name = "MenuHelp_Separator1";
-            MenuHelp_Separator1.Size = new System.Drawing.Size(177, 6);
+            MenuHelp_Separator1.Size = new System.Drawing.Size(138, 6);
             // 
             // MenuHelp_About
             // 
             MenuHelp_About.ForeColor = System.Drawing.Color.White;
             MenuHelp_About.Name = "MenuHelp_About";
-            MenuHelp_About.Size = new System.Drawing.Size(180, 22);
+            MenuHelp_About.Size = new System.Drawing.Size(141, 22);
             MenuHelp_About.Text = "About";
             MenuHelp_About.Click += MenuHelp_About_Click;
             // 
@@ -796,6 +796,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_New.Name = "ToolStrip_New";
             ToolStrip_New.Size = new System.Drawing.Size(23, 22);
             ToolStrip_New.Text = "New";
+            ToolStrip_New.Click += ToolStrip_New_Click;
             // 
             // ToolStrip_Open
             // 
@@ -805,6 +806,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Open.Name = "ToolStrip_Open";
             ToolStrip_Open.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Open.Text = "Open";
+            ToolStrip_Open.Click += ToolStrip_Open_Click;
             // 
             // ToolStrip_Save
             // 
@@ -814,6 +816,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Save.Name = "ToolStrip_Save";
             ToolStrip_Save.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Save.Text = "Save";
+            ToolStrip_Save.Click += ToolStrip_Save_Click;
             // 
             // ToolStrip_SaveAs
             // 
@@ -823,6 +826,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_SaveAs.Name = "ToolStrip_SaveAs";
             ToolStrip_SaveAs.Size = new System.Drawing.Size(23, 22);
             ToolStrip_SaveAs.Text = "Save As ...";
+            ToolStrip_SaveAs.Click += ToolStrip_SaveAs_Click;
             // 
             // ToolStrip_Print
             // 
@@ -846,6 +850,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Undo.Name = "ToolStrip_Undo";
             ToolStrip_Undo.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Undo.Text = "Undo";
+            ToolStrip_Undo.Click += ToolStrip_Undo_Click;
             // 
             // ToolStrip_Redo
             // 
@@ -855,6 +860,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Redo.Name = "ToolStrip_Redo";
             ToolStrip_Redo.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Redo.Text = "Redo";
+            ToolStrip_Redo.Click += ToolStrip_Redo_Click;
             // 
             // ToolStrip_Cut
             // 
@@ -864,6 +870,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Cut.Name = "ToolStrip_Cut";
             ToolStrip_Cut.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Cut.Text = "Cut";
+            ToolStrip_Cut.Click += ToolStrip_Cut_Click;
             // 
             // ToolStrip_Copy
             // 
@@ -873,6 +880,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Copy.Name = "ToolStrip_Copy";
             ToolStrip_Copy.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Copy.Text = "Copy";
+            ToolStrip_Copy.Click += ToolStrip_Copy_Click;
             // 
             // ToolStrip_Paste
             // 
@@ -882,6 +890,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Paste.Name = "ToolStrip_Paste";
             ToolStrip_Paste.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Paste.Text = "Paste";
+            ToolStrip_Paste.Click += ToolStrip_Paste_Click;
             // 
             // ToolStrip_Find
             // 
@@ -891,6 +900,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Find.Name = "ToolStrip_Find";
             ToolStrip_Find.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Find.Text = "Find";
+            ToolStrip_Find.Click += ToolStrip_Find_Click;
             // 
             // ToolStrip_GoTo
             // 
@@ -900,6 +910,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_GoTo.Name = "ToolStrip_GoTo";
             ToolStrip_GoTo.Size = new System.Drawing.Size(23, 22);
             ToolStrip_GoTo.Text = "Go To";
+            ToolStrip_GoTo.Click += ToolStrip_GoTo_Click;
             // 
             // ToolStrip_Font
             // 
@@ -909,6 +920,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Font.Name = "ToolStrip_Font";
             ToolStrip_Font.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Font.Text = "Font";
+            ToolStrip_Font.Click += ToolStrip_Font_Click;
             // 
             // ToolStrip_PreviewHTMLPage
             // 
@@ -918,6 +930,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_PreviewHTMLPage.Name = "ToolStrip_PreviewHTMLPage";
             ToolStrip_PreviewHTMLPage.Size = new System.Drawing.Size(23, 22);
             ToolStrip_PreviewHTMLPage.Text = "Preview HTML Page";
+            ToolStrip_PreviewHTMLPage.Click += ToolStrip_PreviewHTMLPage_Click;
             // 
             // statusStrip
             // 
