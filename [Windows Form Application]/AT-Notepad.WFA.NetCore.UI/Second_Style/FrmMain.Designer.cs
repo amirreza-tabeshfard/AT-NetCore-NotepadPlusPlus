@@ -297,6 +297,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_Open.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O;
             MenuFile_Open.Size = new System.Drawing.Size(222, 22);
             MenuFile_Open.Text = "Open";
+            MenuFile_Open.Click += MenuFile_Open_Click;
             // 
             // MenuFile_Separator1
             // 
@@ -310,6 +311,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_Save.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S;
             MenuFile_Save.Size = new System.Drawing.Size(222, 22);
             MenuFile_Save.Text = "Save";
+            MenuFile_Save.Click += MenuFile_Save_Click;
             // 
             // MenuFile_SaveAs
             // 
@@ -318,6 +320,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_SaveAs.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.S;
             MenuFile_SaveAs.Size = new System.Drawing.Size(222, 22);
             MenuFile_SaveAs.Text = "Save As ...";
+            MenuFile_SaveAs.Click += MenuFile_SaveAs_Click;
             // 
             // MenuFile_SaveAll
             // 
@@ -326,6 +329,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_SaveAll.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.S;
             MenuFile_SaveAll.Size = new System.Drawing.Size(222, 22);
             MenuFile_SaveAll.Text = "Save All";
+            MenuFile_SaveAll.Click += MenuFile_SaveAll_Click;
             // 
             // MenuFile_Separator2
             // 
@@ -339,6 +343,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_Close.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F4;
             MenuFile_Close.Size = new System.Drawing.Size(222, 22);
             MenuFile_Close.Text = "Close";
+            MenuFile_Close.Click += MenuFile_Close_Click;
             // 
             // MenuFile_CloseAll
             // 
@@ -347,6 +352,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_CloseAll.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F4;
             MenuFile_CloseAll.Size = new System.Drawing.Size(222, 22);
             MenuFile_CloseAll.Text = "Close All";
+            MenuFile_CloseAll.Click += MenuFile_CloseAll_Click;
             // 
             // MenuFile_Separator3
             // 
@@ -359,6 +365,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_OpenInSystemEditor.Name = "MenuFile_OpenInSystemEditor";
             MenuFile_OpenInSystemEditor.Size = new System.Drawing.Size(222, 22);
             MenuFile_OpenInSystemEditor.Text = "Open In System Editor";
+            MenuFile_OpenInSystemEditor.Click += MenuFile_OpenInSystemEditor_Click;
             // 
             // MenuFile_Separator4
             // 
@@ -372,6 +379,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_Print.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P;
             MenuFile_Print.Size = new System.Drawing.Size(222, 22);
             MenuFile_Print.Text = "Print";
+            MenuFile_Print.Click += MenuFile_Print_Click;
             // 
             // MenuFile_PrintPreview
             // 
@@ -379,6 +387,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_PrintPreview.Name = "MenuFile_PrintPreview";
             MenuFile_PrintPreview.Size = new System.Drawing.Size(222, 22);
             MenuFile_PrintPreview.Text = "Print Preview";
+            MenuFile_PrintPreview.Click += MenuFile_PrintPreview_Click;
             // 
             // MenuFile_Separator5
             // 
@@ -392,6 +401,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuFile_Exit.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4;
             MenuFile_Exit.Size = new System.Drawing.Size(222, 22);
             MenuFile_Exit.Text = "Exit";
+            MenuFile_Exit.Click += MenuFile_Exit_Click;
             // 
             // MenuEdit
             // 
@@ -403,17 +413,21 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuEdit_Undo
             // 
+            MenuEdit_Undo.ForeColor = System.Drawing.Color.White;
             MenuEdit_Undo.Name = "MenuEdit_Undo";
             MenuEdit_Undo.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z;
             MenuEdit_Undo.Size = new System.Drawing.Size(186, 22);
             MenuEdit_Undo.Text = "Undo";
+            MenuEdit_Undo.Click += MenuEdit_Undo_Click;
             // 
             // MenuEdit_Redo
             // 
+            MenuEdit_Redo.ForeColor = System.Drawing.Color.White;
             MenuEdit_Redo.Name = "MenuEdit_Redo";
             MenuEdit_Redo.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y;
             MenuEdit_Redo.Size = new System.Drawing.Size(186, 22);
             MenuEdit_Redo.Text = "Redo";
+            MenuEdit_Redo.Click += MenuEdit_Redo_Click;
             // 
             // MenuEdit_Separator1
             // 
@@ -422,24 +436,30 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuEdit_Cut
             // 
+            MenuEdit_Cut.ForeColor = System.Drawing.Color.White;
             MenuEdit_Cut.Name = "MenuEdit_Cut";
             MenuEdit_Cut.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X;
             MenuEdit_Cut.Size = new System.Drawing.Size(186, 22);
             MenuEdit_Cut.Text = "Cut";
+            MenuEdit_Cut.Click += MenuEdit_Cut_Click;
             // 
             // MenuEdit_Copy
             // 
+            MenuEdit_Copy.ForeColor = System.Drawing.Color.White;
             MenuEdit_Copy.Name = "MenuEdit_Copy";
             MenuEdit_Copy.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C;
             MenuEdit_Copy.Size = new System.Drawing.Size(186, 22);
             MenuEdit_Copy.Text = "Copy";
+            MenuEdit_Copy.Click += MenuEdit_Copy_Click;
             // 
             // MenuEdit_Paste
             // 
+            MenuEdit_Paste.ForeColor = System.Drawing.Color.White;
             MenuEdit_Paste.Name = "MenuEdit_Paste";
             MenuEdit_Paste.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V;
             MenuEdit_Paste.Size = new System.Drawing.Size(186, 22);
             MenuEdit_Paste.Text = "Paste";
+            MenuEdit_Paste.Click += MenuEdit_Paste_Click;
             // 
             // MenuEdit_Separator2
             // 
@@ -448,24 +468,30 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuEdit_Find
             // 
+            MenuEdit_Find.ForeColor = System.Drawing.Color.White;
             MenuEdit_Find.Name = "MenuEdit_Find";
             MenuEdit_Find.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F;
             MenuEdit_Find.Size = new System.Drawing.Size(186, 22);
             MenuEdit_Find.Text = "Find";
+            MenuEdit_Find.Click += MenuEdit_Find_Click;
             // 
             // MenuEdit_Replace
             // 
+            MenuEdit_Replace.ForeColor = System.Drawing.Color.White;
             MenuEdit_Replace.Name = "MenuEdit_Replace";
             MenuEdit_Replace.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H;
             MenuEdit_Replace.Size = new System.Drawing.Size(186, 22);
             MenuEdit_Replace.Text = "Replace";
+            MenuEdit_Replace.Click += MenuEdit_Replace_Click;
             // 
             // MenuEdit_GoTo
             // 
+            MenuEdit_GoTo.ForeColor = System.Drawing.Color.White;
             MenuEdit_GoTo.Name = "MenuEdit_GoTo";
             MenuEdit_GoTo.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G;
             MenuEdit_GoTo.Size = new System.Drawing.Size(186, 22);
             MenuEdit_GoTo.Text = "Go To";
+            MenuEdit_GoTo.Click += MenuEdit_GoTo_Click;
             // 
             // MenuEdit_Separator3
             // 
@@ -474,10 +500,12 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuEdit_SelectAll
             // 
+            MenuEdit_SelectAll.ForeColor = System.Drawing.Color.White;
             MenuEdit_SelectAll.Name = "MenuEdit_SelectAll";
             MenuEdit_SelectAll.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A;
             MenuEdit_SelectAll.Size = new System.Drawing.Size(186, 22);
             MenuEdit_SelectAll.Text = "Sellect All";
+            MenuEdit_SelectAll.Click += MenuEdit_SelectAll_Click;
             // 
             // MenuEdit_Separator4
             // 
@@ -486,9 +514,11 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuEdit_ChangeCase
             // 
+            MenuEdit_ChangeCase.ForeColor = System.Drawing.Color.White;
             MenuEdit_ChangeCase.Name = "MenuEdit_ChangeCase";
             MenuEdit_ChangeCase.Size = new System.Drawing.Size(186, 22);
             MenuEdit_ChangeCase.Text = "Change Case";
+            MenuEdit_ChangeCase.Click += MenuEdit_ChangeCase_Click;
             // 
             // MenuEdit_Separator5
             // 
@@ -497,15 +527,19 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuEdit_NextDocument
             // 
+            MenuEdit_NextDocument.ForeColor = System.Drawing.Color.White;
             MenuEdit_NextDocument.Name = "MenuEdit_NextDocument";
             MenuEdit_NextDocument.Size = new System.Drawing.Size(186, 22);
             MenuEdit_NextDocument.Text = "Next Document";
+            MenuEdit_NextDocument.Click += MenuEdit_NextDocument_Click;
             // 
             // MenuEdit_PreviousDocument
             // 
+            MenuEdit_PreviousDocument.ForeColor = System.Drawing.Color.White;
             MenuEdit_PreviousDocument.Name = "MenuEdit_PreviousDocument";
             MenuEdit_PreviousDocument.Size = new System.Drawing.Size(186, 22);
             MenuEdit_PreviousDocument.Text = "Previous Document";
+            MenuEdit_PreviousDocument.Click += MenuEdit_PreviousDocument_Click;
             // 
             // MenuView
             // 
@@ -517,10 +551,12 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuView_Font
             // 
+            MenuView_Font.ForeColor = System.Drawing.Color.White;
             MenuView_Font.Name = "MenuView_Font";
             MenuView_Font.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F;
             MenuView_Font.Size = new System.Drawing.Size(185, 22);
             MenuView_Font.Text = "Font";
+            MenuView_Font.Click += MenuView_Font_Click;
             // 
             // MenuView_Separator1
             // 
@@ -529,15 +565,19 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuView_ForeColor
             // 
+            MenuView_ForeColor.ForeColor = System.Drawing.Color.White;
             MenuView_ForeColor.Name = "MenuView_ForeColor";
             MenuView_ForeColor.Size = new System.Drawing.Size(185, 22);
             MenuView_ForeColor.Text = "Fore Color";
+            MenuView_ForeColor.Click += MenuView_ForeColor_Click;
             // 
             // MenuView_BackColor
             // 
+            MenuView_BackColor.ForeColor = System.Drawing.Color.White;
             MenuView_BackColor.Name = "MenuView_BackColor";
             MenuView_BackColor.Size = new System.Drawing.Size(185, 22);
             MenuView_BackColor.Text = "Back Color";
+            MenuView_BackColor.Click += MenuView_BackColor_Click;
             // 
             // MenuView_Separator2
             // 
@@ -546,27 +586,35 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuView_DocumentSelector
             // 
+            MenuView_DocumentSelector.ForeColor = System.Drawing.Color.White;
             MenuView_DocumentSelector.Name = "MenuView_DocumentSelector";
             MenuView_DocumentSelector.Size = new System.Drawing.Size(185, 22);
             MenuView_DocumentSelector.Text = "Document Selector";
+            MenuView_DocumentSelector.Click += MenuView_DocumentSelector_Click;
             // 
             // MenuView_ToolStrip
             // 
+            MenuView_ToolStrip.ForeColor = System.Drawing.Color.White;
             MenuView_ToolStrip.Name = "MenuView_ToolStrip";
             MenuView_ToolStrip.Size = new System.Drawing.Size(185, 22);
             MenuView_ToolStrip.Text = "Tool Strip";
+            MenuView_ToolStrip.Click += MenuView_ToolStrip_Click;
             // 
             // MenuView_StatusStrip
             // 
+            MenuView_StatusStrip.ForeColor = System.Drawing.Color.White;
             MenuView_StatusStrip.Name = "MenuView_StatusStrip";
             MenuView_StatusStrip.Size = new System.Drawing.Size(185, 22);
             MenuView_StatusStrip.Text = "Status Strip";
+            MenuView_StatusStrip.Click += MenuView_StatusStrip_Click;
             // 
             // MenuView_FullScreen
             // 
+            MenuView_FullScreen.ForeColor = System.Drawing.Color.White;
             MenuView_FullScreen.Name = "MenuView_FullScreen";
             MenuView_FullScreen.Size = new System.Drawing.Size(185, 22);
             MenuView_FullScreen.Text = "Full Screen";
+            MenuView_FullScreen.Click += MenuView_FullScreen_Click;
             // 
             // MenuView_Separator3
             // 
@@ -575,9 +623,11 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuView_TabsAlign
             // 
+            MenuView_TabsAlign.ForeColor = System.Drawing.Color.White;
             MenuView_TabsAlign.Name = "MenuView_TabsAlign";
             MenuView_TabsAlign.Size = new System.Drawing.Size(185, 22);
             MenuView_TabsAlign.Text = "Tabs Align";
+            MenuView_TabsAlign.Click += MenuView_TabsAlign_Click;
             // 
             // MenuRun
             // 
@@ -589,10 +639,12 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuRun_Run
             // 
+            MenuRun_Run.ForeColor = System.Drawing.Color.White;
             MenuRun_Run.Name = "MenuRun_Run";
             MenuRun_Run.ShortcutKeys = System.Windows.Forms.Keys.F5;
             MenuRun_Run.Size = new System.Drawing.Size(230, 22);
             MenuRun_Run.Text = "Run";
+            MenuRun_Run.Click += MenuRun_Run_Click;
             // 
             // MenuRun_Separator1
             // 
@@ -601,16 +653,20 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuRun_RunInBrowser
             // 
+            MenuRun_RunInBrowser.ForeColor = System.Drawing.Color.White;
             MenuRun_RunInBrowser.Name = "MenuRun_RunInBrowser";
             MenuRun_RunInBrowser.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.B;
             MenuRun_RunInBrowser.Size = new System.Drawing.Size(230, 22);
             MenuRun_RunInBrowser.Text = "Run In Browser";
+            MenuRun_RunInBrowser.Click += MenuRun_RunInBrowser_Click;
             // 
             // MenuRun_PreviewHTMLPage
             // 
+            MenuRun_PreviewHTMLPage.ForeColor = System.Drawing.Color.White;
             MenuRun_PreviewHTMLPage.Name = "MenuRun_PreviewHTMLPage";
             MenuRun_PreviewHTMLPage.Size = new System.Drawing.Size(230, 22);
             MenuRun_PreviewHTMLPage.Text = "Preview HTML Page";
+            MenuRun_PreviewHTMLPage.Click += MenuRun_PreviewHTMLPage_Click;
             // 
             // MenuRun_Separator2
             // 
@@ -619,21 +675,27 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuRun_GoogleSearch
             // 
+            MenuRun_GoogleSearch.ForeColor = System.Drawing.Color.White;
             MenuRun_GoogleSearch.Name = "MenuRun_GoogleSearch";
             MenuRun_GoogleSearch.Size = new System.Drawing.Size(230, 22);
             MenuRun_GoogleSearch.Text = "Google Search";
+            MenuRun_GoogleSearch.Click += MenuRun_GoogleSearch_Click;
             // 
             // MenuRun_Facebook
             // 
+            MenuRun_Facebook.ForeColor = System.Drawing.Color.White;
             MenuRun_Facebook.Name = "MenuRun_Facebook";
             MenuRun_Facebook.Size = new System.Drawing.Size(230, 22);
             MenuRun_Facebook.Text = "Facebook";
+            MenuRun_Facebook.Click += MenuRun_Facebook_Click;
             // 
             // MenuRun_Twitter
             // 
+            MenuRun_Twitter.ForeColor = System.Drawing.Color.White;
             MenuRun_Twitter.Name = "MenuRun_Twitter";
             MenuRun_Twitter.Size = new System.Drawing.Size(230, 22);
             MenuRun_Twitter.Text = "Twitter";
+            MenuRun_Twitter.Click += MenuRun_Twitter_Click;
             // 
             // MenuWindow
             // 
@@ -645,9 +707,11 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuWindow_Restart
             // 
+            MenuWindow_Restart.ForeColor = System.Drawing.Color.White;
             MenuWindow_Restart.Name = "MenuWindow_Restart";
             MenuWindow_Restart.Size = new System.Drawing.Size(182, 22);
             MenuWindow_Restart.Text = "Restart";
+            MenuWindow_Restart.Click += MenuWindow_Restart_Click;
             // 
             // MenuWindow_Separator1
             // 
@@ -656,9 +720,11 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             // 
             // MenuWindow_CloseAllWindows
             // 
+            MenuWindow_CloseAllWindows.ForeColor = System.Drawing.Color.White;
             MenuWindow_CloseAllWindows.Name = "MenuWindow_CloseAllWindows";
             MenuWindow_CloseAllWindows.Size = new System.Drawing.Size(182, 22);
             MenuWindow_CloseAllWindows.Text = "Close All Windows";
+            MenuWindow_CloseAllWindows.Click += MenuWindow_CloseAllWindows_Click;
             // 
             // MenuWindow_Separator2
             // 
@@ -680,6 +746,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuHelp_Help.ShortcutKeys = System.Windows.Forms.Keys.F1;
             MenuHelp_Help.Size = new System.Drawing.Size(141, 22);
             MenuHelp_Help.Text = "Help";
+            MenuHelp_Help.Click += MenuHelp_Help_Click;
             // 
             // MenuHelp_OnlineHelp
             // 
@@ -687,6 +754,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             MenuHelp_OnlineHelp.Name = "MenuHelp_OnlineHelp";
             MenuHelp_OnlineHelp.Size = new System.Drawing.Size(141, 22);
             MenuHelp_OnlineHelp.Text = "Online Help";
+            MenuHelp_OnlineHelp.Click += MenuHelp_OnlineHelp_Click;
             // 
             // MenuHelp_Separator1
             // 
@@ -728,6 +796,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_New.Name = "ToolStrip_New";
             ToolStrip_New.Size = new System.Drawing.Size(23, 22);
             ToolStrip_New.Text = "New";
+            ToolStrip_New.Click += ToolStrip_New_Click;
             // 
             // ToolStrip_Open
             // 
@@ -737,6 +806,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Open.Name = "ToolStrip_Open";
             ToolStrip_Open.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Open.Text = "Open";
+            ToolStrip_Open.Click += ToolStrip_Open_Click;
             // 
             // ToolStrip_Save
             // 
@@ -746,6 +816,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Save.Name = "ToolStrip_Save";
             ToolStrip_Save.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Save.Text = "Save";
+            ToolStrip_Save.Click += ToolStrip_Save_Click;
             // 
             // ToolStrip_SaveAs
             // 
@@ -755,6 +826,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_SaveAs.Name = "ToolStrip_SaveAs";
             ToolStrip_SaveAs.Size = new System.Drawing.Size(23, 22);
             ToolStrip_SaveAs.Text = "Save As ...";
+            ToolStrip_SaveAs.Click += ToolStrip_SaveAs_Click;
             // 
             // ToolStrip_Print
             // 
@@ -778,6 +850,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Undo.Name = "ToolStrip_Undo";
             ToolStrip_Undo.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Undo.Text = "Undo";
+            ToolStrip_Undo.Click += ToolStrip_Undo_Click;
             // 
             // ToolStrip_Redo
             // 
@@ -787,6 +860,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Redo.Name = "ToolStrip_Redo";
             ToolStrip_Redo.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Redo.Text = "Redo";
+            ToolStrip_Redo.Click += ToolStrip_Redo_Click;
             // 
             // ToolStrip_Cut
             // 
@@ -796,6 +870,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Cut.Name = "ToolStrip_Cut";
             ToolStrip_Cut.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Cut.Text = "Cut";
+            ToolStrip_Cut.Click += ToolStrip_Cut_Click;
             // 
             // ToolStrip_Copy
             // 
@@ -805,6 +880,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Copy.Name = "ToolStrip_Copy";
             ToolStrip_Copy.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Copy.Text = "Copy";
+            ToolStrip_Copy.Click += ToolStrip_Copy_Click;
             // 
             // ToolStrip_Paste
             // 
@@ -814,6 +890,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Paste.Name = "ToolStrip_Paste";
             ToolStrip_Paste.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Paste.Text = "Paste";
+            ToolStrip_Paste.Click += ToolStrip_Paste_Click;
             // 
             // ToolStrip_Find
             // 
@@ -823,6 +900,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Find.Name = "ToolStrip_Find";
             ToolStrip_Find.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Find.Text = "Find";
+            ToolStrip_Find.Click += ToolStrip_Find_Click;
             // 
             // ToolStrip_GoTo
             // 
@@ -832,6 +910,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_GoTo.Name = "ToolStrip_GoTo";
             ToolStrip_GoTo.Size = new System.Drawing.Size(23, 22);
             ToolStrip_GoTo.Text = "Go To";
+            ToolStrip_GoTo.Click += ToolStrip_GoTo_Click;
             // 
             // ToolStrip_Font
             // 
@@ -841,6 +920,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_Font.Name = "ToolStrip_Font";
             ToolStrip_Font.Size = new System.Drawing.Size(23, 22);
             ToolStrip_Font.Text = "Font";
+            ToolStrip_Font.Click += ToolStrip_Font_Click;
             // 
             // ToolStrip_PreviewHTMLPage
             // 
@@ -850,6 +930,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             ToolStrip_PreviewHTMLPage.Name = "ToolStrip_PreviewHTMLPage";
             ToolStrip_PreviewHTMLPage.Size = new System.Drawing.Size(23, 22);
             ToolStrip_PreviewHTMLPage.Text = "Preview HTML Page";
+            ToolStrip_PreviewHTMLPage.Click += ToolStrip_PreviewHTMLPage_Click;
             // 
             // statusStrip
             // 
