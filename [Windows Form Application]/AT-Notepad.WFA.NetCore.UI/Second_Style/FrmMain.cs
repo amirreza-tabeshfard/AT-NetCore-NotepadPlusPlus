@@ -33,7 +33,7 @@ public partial class FrmMain : Form
 
     #endregion
 
-    #region Event(s) ==> Form
+    #region Form
 
     private void FrmMain_Load(object sender, EventArgs e)
     {
@@ -42,7 +42,7 @@ public partial class FrmMain : Form
 
     #endregion
 
-    #region Event(s) == > TopPanel
+    #region TopPanel(s)
 
     private void TopPanel_MouseDown(object sender, MouseEventArgs e)
     {
@@ -382,6 +382,45 @@ public partial class FrmMain : Form
 
     #endregion
 
+    #region StripMenu(s)
+
+    private void StripMenu_Cut_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void StripMenu_Copy_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void StripMenu_Paste_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void StripMenu_SelectAll_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void StripMenu_ChangeCase_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void StripMenu_SetFont_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void StripMenu_PreviewHTMLPage_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    #endregion
+
     #region ToolStrip(s)
 
     private void ToolStrip_New_Click(object sender, EventArgs e)
@@ -445,6 +484,24 @@ public partial class FrmMain : Form
     }
 
     private void ToolStrip_PreviewHTMLPage_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    #endregion
+
+    #region TreeView(s)
+
+    private void treeView_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+    {
+
+    }
+
+    #endregion
+
+    #region TabControl(s)
+
+    private void tabControls_SelectedIndexChanged(object sender, EventArgs e)
     {
 
     }

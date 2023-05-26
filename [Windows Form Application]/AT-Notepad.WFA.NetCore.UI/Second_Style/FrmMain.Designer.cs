@@ -141,6 +141,16 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             toolTip = new System.Windows.Forms.ToolTip(components);
             imageList = new System.Windows.Forms.ImageList(components);
+            contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(components);
+            StripMenu_Cut = new System.Windows.Forms.ToolStripMenuItem();
+            StripMenu_Copy = new System.Windows.Forms.ToolStripMenuItem();
+            StripMenu_Paste = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            StripMenu_SelectAll = new System.Windows.Forms.ToolStripMenuItem();
+            StripMenu_ChangeCase = new System.Windows.Forms.ToolStripMenuItem();
+            StripMenu_SetFont = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            StripMenu_PreviewHTMLPage = new System.Windows.Forms.ToolStripMenuItem();
             TopPanel.SuspendLayout();
             panelMenuStrip.SuspendLayout();
             menuStripControls.SuspendLayout();
@@ -152,6 +162,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             splitContainer.Panel2.SuspendLayout();
             splitContainer.SuspendLayout();
             panelDocumentSelector.SuspendLayout();
+            contextMenuStrip.SuspendLayout();
             SuspendLayout();
             // 
             // TopPanel
@@ -1020,6 +1031,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             treeView.ShowRootLines = false;
             treeView.Size = new System.Drawing.Size(169, 367);
             treeView.TabIndex = 1;
+            treeView.NodeMouseClick += treeView_NodeMouseClick;
             // 
             // panelDocumentSelector
             // 
@@ -1060,6 +1072,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             tabControls.TextColor = System.Drawing.Color.White;
             tabControls.Transparent1 = 150;
             tabControls.Transparent2 = 150;
+            tabControls.SelectedIndexChanged += tabControls_SelectedIndexChanged;
             // 
             // openFileDialog
             // 
@@ -1084,6 +1097,71 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             imageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             imageList.ImageSize = new System.Drawing.Size(16, 16);
             imageList.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // contextMenuStrip
+            // 
+            contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { StripMenu_Cut, StripMenu_Copy, StripMenu_Paste, toolStripSeparator1, StripMenu_SelectAll, StripMenu_ChangeCase, StripMenu_SetFont, toolStripSeparator2, StripMenu_PreviewHTMLPage });
+            contextMenuStrip.Name = "contextMenuStrip";
+            contextMenuStrip.Size = new System.Drawing.Size(181, 192);
+            // 
+            // StripMenu_Cut
+            // 
+            StripMenu_Cut.Name = "StripMenu_Cut";
+            StripMenu_Cut.Size = new System.Drawing.Size(180, 22);
+            StripMenu_Cut.Text = "Cut";
+            StripMenu_Cut.Click += StripMenu_Cut_Click;
+            // 
+            // StripMenu_Copy
+            // 
+            StripMenu_Copy.Name = "StripMenu_Copy";
+            StripMenu_Copy.Size = new System.Drawing.Size(180, 22);
+            StripMenu_Copy.Text = "Copy";
+            StripMenu_Copy.Click += StripMenu_Copy_Click;
+            // 
+            // StripMenu_Paste
+            // 
+            StripMenu_Paste.Name = "StripMenu_Paste";
+            StripMenu_Paste.Size = new System.Drawing.Size(180, 22);
+            StripMenu_Paste.Text = "Pate";
+            StripMenu_Paste.Click += StripMenu_Paste_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // StripMenu_SelectAll
+            // 
+            StripMenu_SelectAll.Name = "StripMenu_SelectAll";
+            StripMenu_SelectAll.Size = new System.Drawing.Size(180, 22);
+            StripMenu_SelectAll.Text = "Select All";
+            StripMenu_SelectAll.Click += StripMenu_SelectAll_Click;
+            // 
+            // StripMenu_ChangeCase
+            // 
+            StripMenu_ChangeCase.Name = "StripMenu_ChangeCase";
+            StripMenu_ChangeCase.Size = new System.Drawing.Size(180, 22);
+            StripMenu_ChangeCase.Text = "Change Case";
+            StripMenu_ChangeCase.Click += StripMenu_ChangeCase_Click;
+            // 
+            // StripMenu_SetFont
+            // 
+            StripMenu_SetFont.Name = "StripMenu_SetFont";
+            StripMenu_SetFont.Size = new System.Drawing.Size(180, 22);
+            StripMenu_SetFont.Text = "Set Font";
+            StripMenu_SetFont.Click += StripMenu_SetFont_Click;
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // StripMenu_PreviewHTMLPage
+            // 
+            StripMenu_PreviewHTMLPage.Name = "StripMenu_PreviewHTMLPage";
+            StripMenu_PreviewHTMLPage.Size = new System.Drawing.Size(180, 22);
+            StripMenu_PreviewHTMLPage.Text = "Preview HTML Page";
+            StripMenu_PreviewHTMLPage.Click += StripMenu_PreviewHTMLPage_Click;
             // 
             // FrmMain
             // 
@@ -1123,6 +1201,7 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
             splitContainer.ResumeLayout(false);
             panelDocumentSelector.ResumeLayout(false);
             panelDocumentSelector.PerformLayout();
+            contextMenuStrip.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1239,5 +1318,15 @@ namespace AT_Notepad.WFA.NetCore.UI.Second_Style
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ImageList imageList;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_Cut;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_Copy;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_Paste;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_SelectAll;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_ChangeCase;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_SetFont;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_PreviewHTMLPage;
     }
 }
